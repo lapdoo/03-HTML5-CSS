@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      section {
+        width: 1280px;
+        height: 100px;
+        border: 1px solid gainsboro;
+        /* overflow: hidden; (넘치는건 숨기겠다) */
+        margin: 0 auto;
+      }
+      section > div {
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin-right: calc((1280px - 300px) / 2);
+        /* background-color: black; */
+      }
+      section > div:last-child {
+        margin-right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+        왜 이런 시멘틱 요소가 필요할까요? HTML5의 시멘틱 요소로 작성한 소스를
+        보면 태그만 보고도 어느 부분이 제목이고 어느 부분이 메뉴인지, 그리고
+        어느 부분이 실제 내용인지를 쉽게 알 수 있습니다. 이렇게 소스만으로도
+        문서 내용을 알 수 있게 되면 검색 엔진에서 웹 문서 내용을 검색할 때
+        필요한 부분만 쉽게 찾아서 검색할 수 있습니다. 또한 시각장애인을 위한
+        판독기 같은 웹 보조 기구를 통해 웹 문서를 이용할 때도 웹 문서를 더욱
+        정확하게 알 수 있게 되고 그만큼 내용을 잘 전달할 수 있게 됩니다
+      </div>
+      <div>
+        왜 이런 시멘틱 요소가 필요할까요? HTML5의 시멘틱 요소로 작성한 소스를
+        보면 태그만 보고도 어느 부분이 제목이고 어느 부분이 메뉴인지, 그리고
+        어느 부분이 실제 내용인지를 쉽게 알 수 있습니다. 이렇게 소스만으로도
+        문서 내용을 알 수 있게 되면 검색 엔진에서 웹 문서 내용을 검색할 때
+        필요한 부분만 쉽게 찾아서 검색할 수 있습니다. 또한 시각장애인을 위한
+        판독기 같은 웹 보조 기구를 통해 웹 문서를 이용할 때도 웹 문서를 더욱
+        정확하게 알 수 있게 되고 그만큼 내용을 잘 전달할 수 있게 됩니다
+      </div>
+      <div>
+        왜 이런 시멘틱 요소가 필요할까요? HTML5의 시멘틱 요소로 작성한 소스를
+        보면 태그만 보고도 어느 부분이 제목이고 어느 부분이 메뉴인지, 그리고
+        어느 부분이 실제 내용인지를 쉽게 알 수 있습니다. 이렇게 소스만으로도
+        문서 내용을 알 수 있게 되면 검색 엔진에서 웹 문서 내용을 검색할 때
+        필요한 부분만 쉽게 찾아서 검색할 수 있습니다. 또한 시각장애인을 위한
+        판독기 같은 웹 보조 기구를 통해 웹 문서를 이용할 때도 웹 문서를 더욱
+        정확하게 알 수 있게 되고 그만큼 내용을 잘 전달할 수 있게 됩니다
+      </div>
+    </section>
+  </body>
+</html>
