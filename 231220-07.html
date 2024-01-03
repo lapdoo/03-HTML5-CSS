@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      section:first-of-type{
+        width: 370px;
+        height: 148px;
+        border: 1px solid gainsboro;
+        border-top: 2px solid cornflowerblue;
+        padding-bottom: 0;
+        padding: 20px;
+        margin: 20px;
+      }
+      section:nth-of-type(2){
+        width: 370px;
+        height: 148px;
+        border: 1px solid gainsboro;
+        border-top: 2px solid rgb(47, 159, 37);
+        padding-bottom: 0;
+        padding: 20px;
+        margin: 20px;
+      }
+      section:last-of-type{
+        width: 370px;
+        height: 148px;position: relative;
+      }
+      .one div {
+        overflow: hidden;margin-top: 20px;
+      }
+      .one p:first-child {
+        float:right;
+      }
+      .one p:last-child {
+        float: left;
+      }
+       h1 {
+        margin-bottom: 20px;
+      }
+      .two div {
+        overflow: hidden;margin: 20px;
+      }
+      .two p:first-child {
+        float:left;width: 70%; word-break: keep-all;
+      }
+      .two p:last-child {
+        float: right; word-break: keep-all;
+      }
+       h2 {
+        margin-bottom: 20px;
+      }
+      #compliment{position: relative;}
+      #compliment div p:last-child{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+    #compliment div p img{padding: 20px;
+        width: 410px;
+        height: 168px;
+    }
+    h3 {
+        margin-bottom: 20px;}
+   #compliment{padding: 40px;}
+   #dajun{border: 1px solid gainsboro;background-color: rgb(182, 205, 247);
+    padding: 20px;margin: 20px;position: relative;}
+   #dajun div p:first-child{word-break: keep-all;width: 70%;}
+    h4{margin-bottom: 20px;}
+    #dajun p img{float: right;}
+    </style>
+  </head>
+  <body>
+    <section>
+    <h1>설문조사</h1>
+      <div  class="one">
+       <p><img src="images/sm01_icon_01.gif" alt="메모장" /></p>
+       <p>대전광역시 설문 및 공모페이지로 <br>
+        안내합니다.</p>
+    </section>
+    <section>
+    <h2>시민시정제안</h2>
+      <div class="two">
+      <p>실/국, 시청의 현안과제는 물론 생활공감 등 자유롭게 제안하세요.
+      </p>
+      <p><img src="images/sm01_icon_02.gif" alt="전구" width="103" height=""></p>
+      </div>
+    </section>
+    <section id="compliment">
+    <h3>칭찬합시다</h3>
+    <div>
+      <p>잊지 못할 한사람의 친절에 <br>감사함을 느끼셨나요?</p>
+      <p><img src="images/sm01_bg_02.gif" alt="우체통"></p>
+    </div>
+    </section>
+    <section id="dajun">
+      <h4>대전시소</h4>
+      <div>
+        <p>시민의 생각이 정책이 되고 시민이 정책과정에 참여합니다.</p>
+        <p><img src="images/sm01_bg_07.png" alt="시소"></p>
+      </div>
+      </section>
+
+  </body>
+</html>

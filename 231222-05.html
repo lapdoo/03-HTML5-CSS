@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "맑은 고딕", sans-serif;
+      }
+      section {
+        width: 886px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      section > div {
+        float: left;
+        margin-right: 20px;
+        margin-top: 15px;
+      }
+      section > div:last-child {
+        margin-right: 0;
+      }
+
+      div.citi {
+        width: 200px;
+        height: 200px;
+        border: 1px solid #ccc;
+        padding: 30px 40px;
+        position: relative;
+      }
+      div.citi h1 {
+        font-size: 22px;
+      }
+      div.citi h2 {
+        font-size: 14px;
+        font-weight: normal;
+      }
+      div.citi p {
+        text-align: center;
+        position: absolute;
+        width: 200px;
+        bottom: 30px;
+      }
+      div.citi p.citizen1 {
+        bottom: 0;
+        height: 102px;
+      }
+      div.seoul h1 {
+        font-size: 22px;
+      }
+      div.seoul h2 {
+        font-size: 14px;
+        font-weight: normal;
+      }
+      div.seoul {
+        width: 340px;
+        height: 80px;
+        border: 1px solid #ccc;
+        padding: 30px 40px;
+        position: relative;
+      }
+      div.seoul p.si {
+        bottom: 0;
+        height: 102px;
+      }
+
+      .fh {
+        position: absolute;
+        right: 0px;
+        bottom: 10px;
+      }
+      .fl,
+      .si,
+      .fo {
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="citi">
+        <h1>칭찬합시다.</h1>
+        <p><img src="images/확성기.png" alt="칭찬" /></p>
+      </div>
+      <div class="citi">
+        <h1>자유게시판.</h1>
+        <p><img src="images/메세지.png" alt="자유" /></p>
+      </div>
+      <div class="citi">
+        <h1>상상대로 서울.</h1>
+        <h2>더 나은 일상을 시민과 함께</h2>
+        <p class="citizen1"><img src="images/손.png" alt="손" /></p>
+      </div>
+    </section>
+    <section>
+      <div class="seoul">
+        <h1>시민감사옴부즈만위원회</h1>
+        <p class="fl"><img src="images/도시.png" alt="서울" /></p>
+      </div>
+      <div class="seoul">
+        <h1>참여예산·예산낭비신고</h1>
+        <h2>투명성과 공정성 제고</h2>
+        <p class="fh"><img src="images/돈.png" alt="돈" /></p>
+      </div>
+      <div class="seoul">
+        <h1>서울시민기자</h1>
+        <h2>서울시민과 함께 만드는 서울소식</h2>
+        <p class="si"><img src="images/뉴스.png" alt="뉴스" /></p>
+      </div>
+      <div class="seoul">
+        <h1>서울시 자원봉사센터</h1>
+        <h2>일상 속 작은 실천</h2>
+        <p class="fo"><img src="images/하트.png" alt="하트" /></p>
+      </div>
+    </section>
+  </body>
+</html>

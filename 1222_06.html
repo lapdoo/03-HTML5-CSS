@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "맑은 고딕", sans-serif;
+      }
+      section {
+        width: 886px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      section > div {
+        float: left;
+        margin-right: 20px;
+      }
+      section > div:last-child {
+        margin-right: 0;
+      }
+      div.citi {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border: 1px solid #ccc;
+        padding: 30px 40px;
+      }
+      div.citi h1 {
+        font-size: 22px;
+      }
+      div.citi h2 {
+        font-size: 14px;
+        font-weight: normal;
+      }
+      div.citi p {
+        position: absolute;
+        bottom: 30px;
+        width: 200px;
+        text-align: center;
+      }
+      div.citi p.citizen1 {
+        bottom: 0;
+        height: 102px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="citi">
+        <h1>칭찬합시다</h1>
+        <p><img src="images/img_citizen1-1_2023.png" alt="칭찬" /></p>
+      </div>
+      <div class="citi">
+        <h1>자유게시판</h1>
+        <h2>더 나은 일상을 시민과 함께</h2>
+        <p><img src="images/img_citizen1-2_2023.png" alt="자유게시판" /></p>
+      </div>
+      <div class="citi">
+        <h1>상상대로 서울</h1>
+        <p class="citizen1">
+          <img src="images/img_citizen1_2023.png" alt="상상대로 서울" />
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

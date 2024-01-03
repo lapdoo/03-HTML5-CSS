@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, "맑은고딕", sans-serif;
+      }
+      section {
+        width: 500px;
+        height: 300px;
+        border: 1px solid #ccc;
+      }
+      ul {
+        list-style: none;
+      }
+      .wrap {
+        width: 500px;
+        margin: 0 auto;
+        position: relative;
+      }
+      .wrap h1 {
+        color: rgb(56, 182, 56);
+        position: relative;
+        left: 50px;
+        top: 10px;
+      }
+      .wrap p {
+        font-size: 12px;
+        color: white;
+        background-color: black;
+      }
+      .wrap ul.search {
+        position: absolute;
+        top: 160px;
+        left: 50px;
+        list-style-image: url(images/ico_bbslist.gif);
+      }
+      .wrap ul.search li a {
+        color: black;
+        text-decoration: none;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="wrap">
+        <h1>SORRY! 죄송합니다.</h1>
+        <p>
+          we're sorry Web page matching your entry. It is passible that you type
+          the address incorrectly. or that the page no longer exists. You may
+          wish to try another entry or to use the links below. which we hope
+          will help provide you with the information you need.
+        </p>
+        <ul class="search">
+          <li><a href="#">검색이 일시적으로 중지되었습니다.</a></li>
+          <li>
+            <a href="#">
+              일시적으로 사용이 제한되었습니다. 조금있다 다시 접속하세요.</a
+            >
+          </li>
+          <li><a href="#">당신은 블랙리스트! 접근금지 대상자입니다.</a></li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>

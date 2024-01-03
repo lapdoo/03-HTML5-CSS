@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      section:first-of-type {
+        width: 370px;
+        height: 148px;
+        border: 1px solid #ccc;
+        padding: 20px;
+        padding-bottom: 0;
+        border-top: 2px solid #3e8bf5;
+        margin: 20px;
+      }
+      section:nth-of-type(2) {
+        width: 370px;
+        height: 148px;
+        border: 1px solid #ccc;
+        padding: 20px;
+        padding-bottom: 0;
+        border-top: 2px solid #449862;
+        margin: 20px;
+      }
+      div {
+        overflow: hidden;
+        margin-top: 20px;
+      }
+      div p:first-child {
+        float: left;
+        width: 70%;
+        word-break: keep-all;
+      }
+      div p:last-child {
+        float: right;
+      }
+      section > p {
+        /* word-break: break-all; */
+        word-break: keep-all;
+      }
+      #compliment {
+        position: relative;
+        padding: 40px;
+      }
+      #compliment div p:last-child {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+      }
+      #compliment div p img {
+        padding: 20px;
+        width: 410px;
+        height: 168px;
+      }
+      #dajun {
+        width: 370px;
+        height: 148px;
+        border: 1px solid #ccc;
+        padding: 20px;
+        padding-bottom: 0;
+        margin: 20px;
+        background-color: #b5d1f8;
+      }
+      #think {
+        width: 370px;
+        height: 148px;
+        border: 1px solid #ccc;
+        padding: 20px;
+        padding-bottom: 0;
+        margin: 20px;
+      }
+      #think div {
+        overflow: hidden;
+      }
+      #think div p:first-child {
+        float: left;
+        width: 70%;
+        word-break: keep-all;
+      }
+      #phon {
+        background-color: #e8e8e8;
+        width: 370px;
+        height: 58px;
+        border: 1px solid #939292;
+        padding: 20px;
+        padding-bottom: 0;
+        margin: 20px;
+      }
+      #phon p img {
+        float: right;
+      }
+      #pen {
+        background-color: #e8e8e8;
+        width: 370px;
+        height: 58px;
+        border: 1px solid #939292;
+        padding: 20px;
+        padding-bottom: 0;
+        margin: 20px;
+      }
+      #pen p img {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>설문조사</h1>
+      <div>
+        <p>
+          대전광역시 설문 및 공모페이지로
+          <!--<br> -->안내합니다
+        </p>
+        <p><img src="images/sm01_icon_01.gif" alt="설문" /></p>
+      </div>
+    </section>
+    <section>
+      <h1>시민시정제안</h1>
+      <div>
+        <p>실/국, 시청의 현안과제는 물론 생활공감 등 자유롭게 제안하세요</p>
+        <p>
+          <img
+            src="images/sm01_icon_02.gif"
+            alt="시민시정제안"
+            width="103"
+            height="94"
+          />
+        </p>
+      </div>
+    </section>
+    <section id="compliment">
+      <h1>칭찬합시다</h1>
+      <div>
+        <p>잊지 못할 한사람의 친절에 <br />감사함을 느끼셨나요?</p>
+        <p><img src="images/sm01_bg_02.gif" alt="칭찬합시다" /></p>
+      </div>
+    </section>
+    <section id="dajun">
+      <h1>대전시소</h1>
+      <div>
+        <p>시민의 생각이 정책이 되고 시민이 정책과정에 참여합니다.</p>
+        <p><img src="images/sm01_bg_07.png" alt="시소" /></p>
+      </div>
+    </section>
+    <section id="think">
+      <h1>정책자문단</h1>
+      <div>
+        <p>대전의 지속적인 성장과 발전을 앞당기는 Think Tank</p>
+        <p>
+          <img src="images/sm01_bg_04.gif" width="103" height="94" alt="지구" />
+        </p>
+      </div>
+    </section>
+    <section id="phon">
+      <h1>대기환경 SMS</h1>
+      <p>
+        <img src="images/sm01_bg_05.png" alt="폰" />
+      </p>
+    </section>
+    <section id="pen">
+      <h1>정책토론</h1>
+      <p>
+        <img src="images/sm01_bg_06.png" alt="펜" />
+      </p>
+    </section>
+  </body>
+</html>

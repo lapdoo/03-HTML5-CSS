@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        padding: 50px;
+      }
+      p {
+        color: red !important;
+      }
+      #one {
+        color: blue;
+      }
+      p.txt {
+        color: chartreuse;
+      }
+      a {
+        color: black;
+      }
+      /* ul li a {
+        background-color: aqua;
+      } */
+      /* body > ul > li > a {
+        background-color: antiquewhite;
+      } */
+      /* ul.gmb > li > a {
+        background-color: blueviolet;
+      } */
+      /* .gmb ul .first + li {
+        background-color: chocolate;
+      } */
+      .gmb ul .first - li {
+        background-color: chocolate;
+      }
+      p,
+      ul,
+      .gmb,
+      #one {
+        border: 1px solid chartreuse;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="one" class="txt" style="color: aqua">문단태그</p>
+    <p class="txt">문단태그</p>
+    <p>문단태그</p>
+    <ul>
+      <li class="txt">리스트</li>
+    </ul>
+    <p><a href="#">링크태그</a></p>
+    <ul class="gmb">
+      <li>
+        <a href="#">메뉴1</a>
+        <ul>
+          <li><a href="#">서브메뉴1</a></li>
+          <li class="first"><a href="#">서브메뉴2</a></li>
+          <li><a href="#">서브메뉴3</a></li>
+          <li><a href="#">서브메뉴4</a></li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

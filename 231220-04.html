@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        text-align: center;
+      }
+      section {
+        width: 1200px;
+        margin: 0 auto;
+        border: 1px solid;
+        overflow: hidden;
+      }
+      section > div {
+        width: 100px;
+        height: 100px;
+        background-color: #ccc;
+        float: left;
+        /* margin-right: 266.67px; */
+        margin-right: calc((1200px - 400px) / 3);
+      }
+      section > div:last-child {
+        margin-right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>one</div>
+      <div>two</div>
+      <div>three</div>
+      <div>four</div>
+    </section>
+  </body>
+</html>

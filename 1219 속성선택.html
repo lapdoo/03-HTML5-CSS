@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      /* a:focus {
+        outline: none;
+      } 키보드의 Tap키를 눌렀을때 */
+      a:first-child {
+        background-color: aquamarine;
+      }
+      a:last-child {
+        background-color: aqua;
+      }
+      a:nth-child(2) {
+        background-color: beige;
+      }
+      /* p:first-of-type{background-color: blue;}
+      p:last-of-type{background-color: chartreuse;}
+      p:nth-of-type(2n){background-color: coral;}짝수(2n)
+      p:nth-of-type(2n+1){background-color: coral;}홀수(2n+1)찾기 */
+      p:nth-of-type(3) {
+        background-color: chartreuse;
+      }
+      span:only-child {
+        background-color: darkolivegreen;
+      }
+      span:only-of-type {
+        background-color: deeppink;
+      }
+      :not(p) {
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">링크태그</a>
+    <a href="#">링크태그</a>
+    <a href="#">링크태그</a>
+    <a href="#">링크태그</a>
+    <a href="#">링크태그</a>
+    <p>문단태그</p>
+    <p>문단태그</p>
+    <p>문단태그</p>
+    <p>문단태그</p>
+    <p>문단태그</p>
+    <span>인라인태그</span>
+    <h1>
+      <span>인라인태그</span>
+      <a href="#">링크태그</a>
+    </h1>
+    <h2><span>인라인태그</span></h2>
+  </body>
+</html>
