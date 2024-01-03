@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BirkenStock</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        color: #333;
+        text-decoration: none;
+      }
+      body {
+        font: 1em Arial, "맑은 고딕", sans-serif;
+      }
+      .top {
+        background: #004084;
+        height: 30px;
+      }
+      .top .inner {
+        width: 837px;
+        margin: 0 auto;
+        background: #ccc;
+      }
+      .top .inner ul {
+        float: right;
+      }
+      .top .inner ul li {
+        float: left;
+      }
+      .top .inner ul li a {
+        color: #fff;
+        line-height: 30px;
+      }
+      .top .inner ul li a:after {
+        content: "/";
+        padding: 0 10px;
+      }
+      .top .inner ul li:last-child a:after {
+        content: "";
+        padding-right: 0;
+      }
+      .top .inner ul li a:hover {
+        text-decoration: underline;
+      }
+      .logo {
+        width: 837px;
+        margin: 80px auto;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="top">
+        <div class="inner">
+          <ul>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">장바구니</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--top end-->
+      <div class="logo"><img src="images/logo1.png" alt="logo1" /></div>
+      <ul id="menu">
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">COLLECTION</a></li>
+        <li><a href="#">MEN</a></li>
+        <li><a href="#">WOMEN</a></li>
+        <li><a href="#">BOYS</a></li>
+        <li><a href="#">GIRLS</a></li>
+        <li><a href="#">SERVICES</a></li>
+      </ul>
+    </div>
+    <!--wrap end-->
+  </body>
+</html>
