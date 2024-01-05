@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        width: 200px;
+        height: 20px;
+        background: #ccc;
+        transition: all 1s cubic-bezier(0, 1.09, 1, 0.36) 1s;
+      }
+      p:hover {
+        width: 400px;
+        height: 200px;
+        /* transition-property: width;어디로 작동할껀지
+        transition-duration: 1s 2s;마우스를 올리고 있을때 작동 시간
+        transition-timing-function: linear; 작동속도 일정
+        transition-delay: 1s; 마우스를 올리고 있을때 작동시작시간까지
+        /*transition: width 1s linear 1s, height 2s linear 1s;transition: all 1s cubic-bezier(0, 1.09, 1, 0.36) 1s;*/
+      }
+      div {
+        width: 200px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #8ac007;
+        height: 20px;
+        cursor: pointer;
+      }
+      div:hover {
+        transition: all 1s;
+      }
+      div:first-of-type:hover {
+        color: white;
+        background: #8ac007;
+      }
+      div:nth-of-type(2):hover {
+        margin-left: 50px;
+      }
+      div:nth-of-type(3):hover {
+        border: 3px solid;
+      }
+      div:last-of-type:hover {
+        width: 400px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <p></p>
+    <div>color change</div>
+    <div>offset change</div>
+    <div>border change</div>
+    <div>size change</div>
+  </body>
+</html>
