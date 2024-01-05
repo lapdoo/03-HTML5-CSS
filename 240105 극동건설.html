@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font: 1em Arial, "맑은 고딕", sans-serif;
+      }
+      section {
+        height: 600px;
+        background-image: url(images/극동건설/mid_bg_img1.jpg);
+      }
+      section div {
+        color: white;
+        text-align: center;
+      }
+      section div p {
+        padding-top: 60px;
+        font-size: 32px;
+      }
+      section div ul.box li {
+        position: relative;
+        width: 134px;
+        height: 45px;
+        text-align: center;
+      }
+      .line {
+        position: absolute;
+        background: white;
+      }
+      .top {
+        width: 100%;
+        height: 5px;
+        left: 0;
+        transform: scaleX(0);
+        transition: all 0.5s ease-in-out;
+      }
+      section div ul li:hover .top {
+        transform: scaleY(1);
+      }
+      .right {
+        width: 5px;
+        height: 100%;
+        right: 0;
+        transform: scaleY(0);
+        transition: all 0.5s ease-in-out;
+      }
+      section div ul li:hover .right {
+        transform: scaleY(1);
+      }
+      .bottom {
+        width: 100%;
+        height: 5px;
+        left: 0;
+        bottom: 0;
+        transform: scaleX(0);
+        transition: all 0.5s ease-in-out;
+      }
+      section div ul li:hover .bottom {
+        transform: scaleY(1);
+      }
+      .left {
+        width: 5px;
+        height: 100%;
+        left: 0;
+        transform: scaleY(0);
+        transition: all 0.5s ease-in-out;
+      }
+      section div ul li:hover .left {
+        transform: scaleY(1);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+        <p>
+          개개인의 특성과 능력을 중시하는 극동건설은<br />여러분의
+          <strong>성정의 터</strong>를 마련합니다.
+        </p>
+        <ul class="box">
+          <li>
+            인재상
+            <span class="line top"></span>
+            <span class="line right"></span>
+            <span class="line bottom"></span>
+            <span class="line left"></span>
+          </li>
+          <li>
+            인사제도
+            <span class="line top"></span>
+            <span class="line right"></span>
+            <span class="line bottom"></span>
+            <span class="line left"></span>
+          </li>
+          <li>
+            채용안내
+            <span class="line top"></span>
+            <span class="line right"></span>
+            <span class="line bottom"></span>
+            <span class="line left"></span>
+          </li>
+          <li>
+            채용공고
+            <span class="line top"></span>
+            <span class="line right"></span>
+            <span class="line bottom"></span>
+            <span class="line left"></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        padding: 500px 0;
+        font: 1em Arial, "맑은 고딕", sans-serif;
+      }
+      ul {
+        list-style: none;
+      }
+      .mid {
+        width: 100%;
+        min-width: 1280px;
+        margin: 0 auto;
+        padding: 120px 0;
+        background: url(images/극동건설/mid_bg_img1.jpg) center/cover fixed;
+        filter: brightness(80%);
+      }
+      la. {
+        width: 100%;
+        margin: 0 auto;
+        padding: 120px 0;
+      }
+      div.desc {
+        width: 1280px;
+        margin: 0 auto;
+        font-size: 50px;
+        color: white;
+        text-align: center;
+        line-height: 70px;
+      }
+      .info {
+        width: 1280px;
+        margin: 0 auto;
+        color: white;
+      }
+      .info ul {
+        width: 1080px;
+        margin: 0 auto;
+        height: 200px;
+        text-align: center;
+      }
+      .info ul li {
+        position: relative;
+        float: left;
+        width: 25%;
+        margin-top: 50px;
+      }
+      .info ul li a {
+        display: block;
+        color: #fff;
+        width: 80%;
+        margin: 0 auto;
+        height: 120px;
+      }
+      .info ul li .col {
+        cursor: pointer;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .info ul li .col::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 30px;
+        width: 1px;
+        height: 80px;
+        background: white;
+      }
+      .info ul li:last-child .col::after {
+        width: 0;
+      }
+      .title {
+        line-height: 50px;
+        position: relative;
+        margin: 0 auto 20px;
+        width: 150px;
+        height: 50px;
+      }
+      .line {
+        position: absolute;
+        background: #ffffff;
+      }
+      .mid .line-top {
+        width: 100%;
+        height: 1px;
+        left: 0;
+        top: 0;
+        transform: scaleX(0);
+        transition: all 0.5s ease-in-out;
+      }
+      .mid ul li:hover .line-top {
+        transform: scaleX(1);
+      }
+      .mid .line-bottom {
+        width: 100%;
+        height: 1px;
+        left: 0;
+        bottom: 0;
+        transform: scaleX(0);
+        transition: all 0.5s ease-in-out;
+      }
+      .mid ul li:hover .line-bottom {
+        transform: scaleX(1);
+      }
+      .mid .line-left {
+        width: 1px;
+        height: 100%;
+        left: 0;
+        top: 0;
+        transform: scaleY(0);
+        transition: all 0.5s ease-in-out;
+      }
+      .mid ul li:hover .line-left {
+        transform: scaleY(1);
+      }
+      .mid .line-right {
+        width: 1px;
+        height: 100%;
+        right: 0;
+        top: 0;
+        transform: scaleY(0);
+        transition: all 0.5s ease-in-out;
+      }
+      .mid ul li:hover .line-right {
+        transform: scaleY(1);
+      }
+      .info ul li a:visited {
+        color: white;
+      }
+      .info ul li a:active {
+        border: 1px dotted #fff;
+      }
+      div.la {
+        width: 100%;
+        margin: 0 auto;
+        padding: 120px 0;
+        text-align: center;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mid">
+      <div class="desc">
+        <p>
+          개개인의 특성과 능력을 중시하는 극동건설은<br />여러분의
+          <strong>성장의 터</strong>를 마련합니다.
+        </p>
+      </div>
+      <div class="info">
+        <ul class="box">
+          <li>
+            <a href="https://www.kukdong.co.kr/HireNotice" target="_new">
+              <div class="col">
+                <div class="title">
+                  <h2>인재상</h2>
+                  <span class="line line-top"></span>
+                  <span class="line line-right"></span>
+                  <span class="line line-bottom"></span>
+                  <span class="line line-left"></span>
+                </div>
+                <p class="desc">
+                  극동건설이 추구하는 인재상을<br />
+                  여러분께 소개합니다
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.kukdong.co.kr/AppraiseCompensation"
+              target="_new"
+            >
+              <div class="col">
+                <div class="title">
+                  <h2>인사제도</h2>
+                  <span class="line line-top"></span>
+                  <span class="line line-right"></span>
+                  <span class="line line-bottom"></span>
+                  <span class="line line-left"></span>
+                </div>
+                <p class="desc">
+                  임직원의 역량향상과 동기부여를<br />
+                  위해 다양한 제도를 운영합니다
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.kukdong.co.kr/HireIntro" target="_new">
+              <div class="col">
+                <div class="title">
+                  <h2>채용안내</h2>
+                  <span class="line line-top"></span>
+                  <span class="line line-right"></span>
+                  <span class="line line-bottom"></span>
+                  <span class="line line-left"></span>
+                </div>
+                <p class="desc">
+                  극동건설의 채용제도 및 절차를<br />
+                  자세히 소개합니다.
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.kukdong.co.kr/HireNotice" target="_new">
+              <div class="col">
+                <div class="title">
+                  <h2>채용공고</h2>
+                  <span class="line line-top"></span>
+                  <span class="line line-right"></span>
+                  <span class="line line-bottom"></span>
+                  <span class="line line-left"></span>
+                </div>
+                <p class="desc">
+                  극동건설의 채용공고를<br />
+                  소개합니다
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="la">
+      <h2>PR Center</h2>
+      <p>
+        세상에 없던 신기술을 개척하는 기업,극동건설이 기술의 진보를 선도합니다.
+      </p>
+      <div class="ta">
+        <ul class="one">
+          <li>
+            <a href="#">
+              <h2>극동뉴스</h2>
+              <p>극동건설의 다양한 소식을 가장 빠르게 <br />전달해드립니다.</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
