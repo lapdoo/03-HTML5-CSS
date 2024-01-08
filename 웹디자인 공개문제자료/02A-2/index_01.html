@@ -2,6 +2,7 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
@@ -20,10 +21,10 @@
         font-family: "돋움", Dotum, sans-serif;
       }
       header {
+        /* position: relative; */
         width: 1200px;
         margin: 0 auto;
         height: 100px;
-        border: 1px solid;
       }
       header > div {
         float: left;
@@ -37,16 +38,16 @@
         width: 1000px;
       }
       header > div.menu > ul {
-        width: 800px;
         float: right;
+        width: 800px;
         margin-top: 20px;
         margin-right: 20px;
       }
       header > div.menu > ul > li {
         position: relative;
-        text-align: center;
-        width: 25%;
         float: left;
+        width: 25%;
+        text-align: center;
       }
       header > div.menu > ul > li > a {
         display: block;
@@ -60,35 +61,46 @@
       header > div.menu > ul > li .sub {
         position: absolute;
         width: 100%;
+        background: #000;
         height: 0;
         overflow: hidden;
-        background: #fff;
-        /* margin-bottom: 50px; */
         transition: height 0.5s;
+        z-index: 1;
       }
       header > div.menu > ul:hover .sub {
-        height: 170px;
-        border-bottom: 1px solid #333;
-      }
-      header > div.menu > ul > li:first-child .sub {
-        border-left: 1px solid #333;
-      }
-      header > div.menu > ul > li:last-child .sub {
-        border-right: 1px solid #333;
+        height: 150px;
       }
       header > div.menu > ul > li .sub a {
         line-height: 30px;
         display: block;
+        color: #fff;
       }
       header > div.menu > ul > li:hover > a,
-      header > div.menu > ul > li a:hover,
+      header > div.menu > ul > li > a:hover {
+        background: #000;
+        color: #fff;
+      }
       header > div.menu > ul > li .sub a:hover {
-        background: black;
-        color: white;
+        background: #fff;
+        color: #333;
       }
       .slide {
         width: 1200px;
+        height: 300px;
         margin: 0 auto;
+      }
+      .bg {
+        position: absolute;
+        left: 0;
+        top: 62px;
+        width: 100%;
+        height: 0px;
+        background: #000;
+        margin: 0 auto;
+        transition: height 0.5s;
+      }
+      header > div.menu > ul:hover ~ .bg {
+        height: 150px;
       }
     </style>
   </head>
@@ -126,7 +138,7 @@
               </ul>
             </li>
             <li>
-              <a href="#">악세사리</a>
+              <a href="#">악세서리</a>
               <ul class="sub">
                 <li><a href="#">귀고리</a></li>
                 <li><a href="#">목걸이</a></li>
@@ -135,9 +147,10 @@
               </ul>
             </li>
           </ul>
+          <div class="bg"></div>
         </div>
       </header>
+      <div class="slide"><img src="images/slide02.jpg" alt="slide" /></div>
     </div>
-    <div class="slide"><img src="images/slide02.jpg" alt="" /></div>
   </body>
 </html>
