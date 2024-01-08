@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        margin: 100px auto;
+        perspective: 800px;
+      }
+      div img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        object-fit: cover;
+      }
+      div img:first-child {
+        transform: translateZ(-200px);
+        opacity: 1;
+      }
+      div img:nth-child(2) {
+        transform: rotateX(90deg) translateZ(200px);
+        opacity: 0.7;
+      }
+      div img:nth-child(3) {
+        transform: rotateY(90deg) translateZ(200px);
+      }
+      div img:nth-child(4) {
+        transform: rotateY(-90deg) translateZ(200px);
+      }
+      div img:nth-child(5) {
+        transform: rotateX(-90deg) translateZ(200px);
+      }
+      div img:last-child {
+        transform: translateZ(200px);
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="images/cubic_css1.jpg" alt="cubic1" />
+      <img src="images/cubic_css2.jpg" alt="cubic2" />
+      <img src="images/cubic_css3.jpg" alt="cubic3" />
+      <img src="images/cubic_css4.jpg" alt="cubic4" />
+      <img src="images/cubic_css5.jpg" alt="cubic5" />
+      <img src="images/cubic_css6.jpg" alt="cubic6" />
+    </div>
+  </body>
+</html>
