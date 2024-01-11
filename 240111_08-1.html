@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+        width: 720px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      ul li {
+        width: 25%;
+        float: left;
+        cursor: pointer;
+        text-align: center;
+      }
+      ul li p:last-child {
+        width: 142px;
+        position: relative;
+        height: 142px;
+        margin: 20px auto 0;
+        background-image: url(images/0111/bg_info.png);
+      }
+      ul li:first-child p:last-child {
+        background-position: 0 0;
+      }
+      ul li:nth-child(2) p:last-child {
+        background-position: -142px 0;
+      }
+      ul li:nth-child(3) p:last-child {
+        background-position: -284px 0;
+      }
+      ul li:nth-child(4) p:last-child {
+        background-position: -426px 0;
+      }
+      ul li:hover p:last-child {
+        background-position-y: -240px;
+        animation-name: ani;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      @keyframes ani {
+        0%,
+        100% {
+          bottom: 0;
+          animation-timing-function: ease-out;
+        }
+        50% {
+          bottom: -10px;
+          animation-timing-function: ease-in;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <p>대전청년포털</p>
+        <p></p>
+      </li>
+      <li>
+        <p>대전청년포털</p>
+        <p></p>
+      </li>
+      <li>
+        <p>대전청년포털</p>
+        <p></p>
+      </li>
+      <li>
+        <p>대전청년포털</p>
+        <p></p>
+      </li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      body {
+        text-align: center;
+      }
+      input {
+        display: none;
+      }
+      ul.box {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        margin: 50px auto;
+      }
+      ul.box li {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      ul.box li.pipe {
+        background-image: url(images/pipe.png);
+      }
+      ul.box li.pro {
+        background-image: url(images/propeller.png);
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      label {
+        display: inline-block;
+        /* width: 100px; */
+        border: 1px solid black;
+        /* padding: 10px 20px; */
+        width: 100px;
+        padding: 10px 0;
+        border-radius: 50px;
+        cursor: pointer;
+        text-align: center;
+      }
+      @keyframes left {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(-1080deg);
+        }
+      }
+      @keyframes right {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(1080deg);
+        }
+      }
+      #left:checked ~ ul li.pro {
+        animation-name: left;
+        animation-play-state: running;
+      }
+      #right:checked ~ ul li.pro {
+        animation-name: right;
+        animation-play-state: running;
+      }
+      #off:checked ~ ul li.pro {
+        animation-play-state: paused;
+      }
+      #left:checked ~ label:first-of-type,
+      #right:checked ~ label:nth-of-type(2),
+      #off:checked ~ label:nth-of-type(3) {
+        background: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="radio" name="btn" id="left" checked />
+    <input type="radio" name="btn" id="right" />
+    <input type="radio" name="btn" id="off" />
+    <ul class="box">
+      <li class="pipe"></li>
+      <li class="pro"></li>
+    </ul>
+    <label for="left">turn left</label>
+    <label for="right">turn right</label>
+    <label for="off">off</label>
+  </body>
+</html>
