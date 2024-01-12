@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      body {
+        font: 1em Arial, "맑은 고딕", sans-serif;
+      }
+      .top {
+        background: #dc300a;
+        height: 30px;
+        margin-bottom: 20px;
+      }
+      .top .inner {
+        width: 1025px;
+        margin: 0 auto;
+        background: #ccc;
+      }
+      .top .inner ul {
+        float: right;
+      }
+      .top .inner ul li {
+        float: left;
+      }
+      .top .inner ul li a {
+        font-size: 12px;
+        text-decoration: none;
+        color: #fff;
+        line-height: 30px;
+      }
+      .top .inner ul li a:after {
+        content: "";
+        padding: 0 20px;
+      }
+      .top .inner ul li:last-child a:after {
+        content: "";
+        padding-right: 0;
+      }
+      .top .inner ul li a:hover {
+        text-decoration: underline;
+      }
+      .top_bottom {
+        width: 1025px;
+        margin: 0 auto;
+      }
+      .logo {
+        float: left;
+      }
+      #menu {
+        float: right;
+      }
+      #menu li {
+        float: left;
+      }
+      #menu li a {
+        line-height: 60px;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #e60909;
+      }
+      #menu a:after {
+        content: "";
+        padding: 0 20px;
+      }
+      #menu li:last-child a:after {
+        content: "";
+        padding-right: 0;
+      }
+      #menu li a:hover {
+        text-decoration: underline;
+      }
+      div.sub {
+        width: 1025px;
+        margin: 0 auto;
+      }
+      div.banner {
+        display: inline-block;
+        width: 1025px;
+        height: 312px;
+        border: 1px solid white;
+        overflow: hidden;
+        border-radius: 20px;
+        margin: 20px;
+      }
+      #io li {
+        float: left;
+        width: 25%;
+        text-align: center;
+      }
+      div.dec {
+        width: 1025px;
+        margin: 0 auto;
+      }
+      .dec > div.ss {
+        float: left;
+        width: 50%;
+      }
+      .dec > div.ss img {
+        padding-left: 120px;
+      }
+      .dec > div {
+        float: right;
+        width: 50%;
+      }
+      .dec label {
+        line-height: 40px;
+        font-size: 22px;
+        font-weight: bold;
+      }
+      .dec table {
+        width: 100%;
+        table-layout: fixed;
+      }
+      .dec table a {
+        text-decoration: none;
+        color: black;
+      }
+      .dec table td:first-child {
+        width: 70%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        line-height: 35px;
+      }
+      .dec table td:last-child {
+        width: 20%;
+        text-align: right;
+      }
+      .bg {
+        width: 1025px;
+        margin: 0 auto;
+        background: bisque;
+        clear: both;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="top">
+        <div class="inner">
+          <ul>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">English</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="top_bottom">
+        <div class="logo">
+          <img src="images/CGV/image/logo.gif" alt="logo1" />
+        </div>
+        <ul id="menu">
+          <li><a href="#">영화예매</a></li>
+          <li><a href="#">신작개봉</a></li>
+          <li><a href="#">이벤트</a></li>
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">CGV매점</a></li>
+        </ul>
+      </div>
+      <div class="sub">
+        <div class="banner">
+          <img src="images/CGV/image/visual.jpg" alt="visual" />
+        </div>
+        <ul id="io">
+          <li>
+            <a href="#"><img src="images/CGV/image/img01.png" alt="img01" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/CGV/image/img02.png" alt="img02" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/CGV/image/img03.png" alt="img03" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/CGV/image/img04.png" alt="img04" /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="dec">
+        <div class="ss">
+          <ul class="ev">
+            <li><h2>이벤트</h2></li>
+            <li><img src="images/CGV/image/banner.jpg" alt="" /></li>
+          </ul>
+        </div>
+        <div class="notice">
+          <label for="notice">공지사항</label>
+          <ul class="tap">
+            <li>
+              <table>
+                <tr>
+                  <td>
+                    <a href="#popup">공지사항 제목이 들어갑니다.</a>
+                  </td>
+                  <td>.2017-08-07</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#">공지사항 제목이 들어갑니다.</a>
+                  </td>
+                  <td>.2017-08-07</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#">공지사항 제목이 들어갑니다.</a>
+                  </td>
+                  <td>.2017-08-07</td>
+                </tr>
+                <tr>
+                  <td><a href="#">공지사항 제목이 들어갑니다.</a></td>
+                  <td>.2017-08-07</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#"
+                      >공지사항 제목이 들어갑니다.공지사항 제목이
+                      들어갑니다.공지사항 제목이 들어갑니다.공지사항 제목이
+                      들어갑니다.</a
+                    >
+                  </td>
+                  <td>.2017-08-07</td>
+                </tr>
+              </table>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bg">
+        <ul>
+          <li>All Copyrights Reserved.</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

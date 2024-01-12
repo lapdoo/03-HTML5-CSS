@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      body {
+        background: #333;
+      }
+      a.banner {
+        position: relative;
+        border: 1px solid #555;
+        display: block;
+        width: 728px;
+        height: 176px;
+        margin: 50px auto;
+        text-align: center;
+        font-family: "Nanum Pen Script", cursive;
+        background: url(images/banner_logo.png) 50% 80% no-repeat,
+          url(images/banner_photo.png)-300px 0px no-repeat,
+          url(images/banner_09.png) 20px -400px no-repeat,
+          url(images/banner_bg.png);
+        animation-name: ani;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+      }
+      /* a.banner:hover {
+        animation-name: ani;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+      } */
+      @keyframes ani {
+        to {
+          background-position: 100% 80%, -40px 0px, 20px -30px, 0 0;
+        }
+      }
+      a.banner span {
+        position: absolute;
+        left: 50%;
+        top: 20px;
+        transform: translateX(-50%);
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+        opacity: 0;
+        animation: text 1s ease-in 1s forwards;
+      }
+      a.banner img {
+        position: absolute;
+        left: 300px;
+        top: 80%;
+        opacity: 0;
+        animation: arrow 1s ease-in 1s infinite;
+      }
+      @keyframes arrow {
+        to {
+          left: 350px;
+          opacity: 1;
+        }
+      }
+      /* a.banner:hover img {
+        animation: logo 1s ease-in forwards;
+      } */
+      @keyframes text {
+        to {
+          opacity: 1;
+        }
+      }
+      /* a.banner:hover span {
+        animation: text 1s ease-in forwards;
+      } */
+    </style>
+  </head>
+  <body>
+    <div>
+      <a href="#" class="banner">
+        <img src="images/banner_arrow.png" alt="arrow" />
+        <span>Animation banner design <br />웹폰트를 활용한 스타일</span>
+      </a>
+    </div>
+  </body>
+</html>
