@@ -95,18 +95,37 @@
         margin: 0 auto;
       }
       div.bottom ul {
-        width: calc(100% - 3);
+        padding: 20px;
         float: left;
       }
       div.bottom ul.notice {
         font-size: 12px;
         line-height: 20px;
       }
+      div.bottom ul.notice li {
+        width: 70%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
       div.bottom ul.im {
         float: left;
       }
+      div.bottom ul.im li:first-child img:hover {
+        content: url(images/colorbag/images/csbanner_over.jpg);
+      }
+      div.bottom ul.im li:nth-child(2) img:hover {
+        content: url(images/colorbag/images/csbanner_over-02.jpg);
+      }
+      div.bottom ul.im li:nth-child(3) img:hover {
+        content: url(images/colorbag/images/csbanner_over-03.jpg);
+      }
+
       div.bottom ul.cs li {
         float: right;
+      }
+      ul.introduce {
+        font-size: 14px;
       }
     </style>
   </head>
@@ -342,6 +361,14 @@
               ><img src="images/colorbag/images/cscenter.jpg" alt="center"
             /></a>
           </li>
+        </ul>
+      </div>
+      <div class="bottom_2">
+        <ul class="introduce">
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">개인정보취급방침</a></li>
+          <li><a href="#">서비스이용약관</a></li>
+          <li><a href="#">이메일문의</a></li>
         </ul>
       </div>
     </div>
