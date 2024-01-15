@@ -18,14 +18,6 @@
       div.logo {
         width: 250px;
         margin: 0px auto;
-
-        /* background: url(images/colorbag/images/color_topmini1.jpg) 37% 25%
-             no-repeat,
-           url(images/colorbag/images/color_topmini2.jpg) 43% 25% no-repeat,
-           url(images/colorbag/images/color_topmini3.jpg) 48% 25% no-repeat,
-           url(images/colorbag/images/color_topmini4.jpg) 53% 25% no-repeat,
-           url(images/colorbag/images/color_topmini5.jpg) 58% 25% no-repeat,
-           url(images/colorbag/images/color_topmini6.jpg) 63% 25%no-repeat; */
       }
       div.logo ul.mini li {
         float: left;
@@ -99,13 +91,21 @@
         text-decoration: none;
       }
       div.bottom {
-        width: 1100px;
+        width: 1200px;
         margin: 0 auto;
       }
-      div.bottom ul.notice {
+      div.bottom ul {
+        width: calc(100% - 3);
         float: left;
       }
-      div.bottom ul.cs {
+      div.bottom ul.notice {
+        font-size: 12px;
+        line-height: 20px;
+      }
+      div.bottom ul.im {
+        float: left;
+      }
+      div.bottom ul.cs li {
         float: right;
       }
     </style>
