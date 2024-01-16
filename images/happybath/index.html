@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      body {
+        font: 1em Arial, "맑은 고딕", sans-serif;
+      }
+      header {
+        margin: 0 auto;
+        width: 100%;
+        height: 300px;
+        background: #653c6d;
+      }
+      .top {
+        height: 150px;
+        background: url(images/logo.jpg) center no-repeat;
+      }
+      .top .inner {
+        width: 1000px;
+        height: 32px;
+        margin: 0 auto;
+      }
+      .top .inner ul {
+        background: white;
+        border-radius: 5px;
+        border: 1px solid #450053;
+        float: right;
+      }
+      .top .inner ul li {
+        float: left;
+      }
+      .top .inner ul li a {
+        font-size: 10px;
+        color: #450053;
+        line-height: 10px;
+      }
+      .top .inner ul li a:after {
+        content: "|";
+        padding: 0 3px;
+      }
+      .top .inner ul li:last-child a:after {
+        content: "";
+        padding-right: 0;
+      }
+      .top .inner ul li a:hover {
+        text-decoration: underline;
+      }
+      nav {
+        width: 1000px;
+        margin: 0 auto;
+      }
+      nav .menu li {
+        font-weight: bold;
+        width: 20%;
+        float: left;
+      }
+      nav > .menu > li > a {
+        padding: 40px;
+        display: block;
+        line-height: 0px;
+        color: white;
+      }
+      .middle {
+        width: 1000px;
+      }
+      .middle ul li {
+        padding-top: 10px;
+        text-align: center;
+        float: left;
+      }
+      .middle2 {
+        width: 1000px;
+        margin: 0 auto;
+      }
+      .middle2 ul li {
+        text-align: center;
+        padding-top: 10px 0px 0px 0px;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="top">
+        <div class="inner">
+          <ul>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">온라인샵</a></li>
+            <li><a href="#">구입처안내</a></li>
+            <li>
+              <a href="#"><h1>&#xf015;</h1></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">해피바스 이야기</a></li>
+          <li><a href="#">해피바스 선물</a></li>
+          <li><a href="#">해피바스 뷰티톡</a></li>
+          <li><a href="#">해피바스 제품</a></li>
+          <li><a href="#">해피바스 함께하기 </a></li>
+          <ul>
+            <li>
+              <a href="#"><img src="images/visual-01.jpg" alt="main" /></a>
+            </li>
+          </ul>
+        </ul>
+      </nav>
+    </header>
+    <div class="middle">
+      <ul>
+        <li>해피바스 선물</li>
+        <li>
+          <a href="#"><img src="images/img1.jpg" alt="img1" /></a>
+        </li>
+      </ul>
+      <ul>
+        <li>해피바스 뷰티톡</li>
+        <li>
+          <a href="#"><img src="images/woman.png" alt="woman" /></a>
+        </li>
+      </ul>
+    </div>
+    <div class="middle2">
+      <ul>
+        <li>추천아이템</li>
+        <li>
+          <a href="#"><img src="images/item1.png" alt="item1" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/item2.png" alt="item2" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/item3.png" alt="item3" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/item4.png" alt="item4" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/item5.png" alt="item5" /></a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      svg {
+        widows: 400px;
+        height: 400px;
+        transform: rotate(-90deg);
+      }
+      svg circle {
+        stroke-linecap: round;
+        stroke-dasharray: 628;
+        stroke-dashoffset: 0;
+        animation: ani 1s forwards;
+      }
+      @keyframes ani {
+        0% {
+          stroke-dashoffset: 628;
+        }
+        100% {
+          stroke-dashoffset: 50;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <svg>
+      <circle
+        cx="190"
+        cy="200"
+        r="100"
+        fill="none"
+        stroke-width="10"
+        stroke="rgb(0,0,0)"
+      />
+    </svg>
+  </body>
+</html>
