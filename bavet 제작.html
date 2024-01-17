@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      body {
+        background: rgb(244 241 234);
+        font-family: "Teko", sans-serif;
+      }
+      .top {
+        width: 3360px;
+        margin: 0 auto;
+      }
+      nav {
+        width: 1395px;
+        margin: 0 auto;
+      }
+      .top nav div {
+        float: left;
+      }
+      nav .main a {
+        display: block;
+        padding: 20px 60px 20px 0;
+        margin: 20px 0;
+        font-size: 30px;
+        line-height: 56px;
+        font-weight: 600;
+      }
+      .bavet svg {
+        width: 100px;
+        padding: 30px 40px 20px 0;
+        margin: 20px 0;
+        height: 34px;
+      }
+      .bavet svg path {
+        stroke-width: 1px;
+        fill: #c33130;
+      }
+      .right ul {
+        float: left;
+      }
+      .lang {
+        margin: 10px;
+        width: 60px;
+        height: 60px;
+        background: white;
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        border-radius: 10px;
+      }
+      .lang > a {
+        color: #c33130;
+      }
+      .lang > ul li {
+        width: 60px;
+        height: 60px;
+        background: white;
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        border-radius: 10px;
+      }
+      .right ul > ul li {
+        margin: 1px 10px 1px 10px;
+        width: 60px;
+        height: 60px;
+        background: #c33130;
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        border-radius: 10px 10px 0 0;
+      }
+      .right ul > ul li:last-child {
+        border-radius: 0 0 10px 10px;
+      }
+      .right ul > ul li:hover {
+        background: #a52828;
+      }
+      .right ul > ul li a {
+        color: white;
+      }
+      .main2 {
+        width: 947px;
+        height: 568px;
+        overflow: hidden;
+        margin: 50px;
+        border-radius: 300px;
+      }
+      .main2 img {
+        width: 100%;
+        height: 568px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="top">
+        <div class="menu">
+          <nav>
+            <div class="main">
+              <a href="#">OUR MENU</a>
+            </div>
+            <div class="main">
+              <a href="#">RESTAURANTS</a>
+            </div>
+            <div class="logo">
+              <div class="bavet">
+                <a href="#">
+                  <svg>
+                    <g>
+                      <path
+                        d="M8.6342 0.706055H0.621094V27.3327H8.6342C10.8823 27.3327 13.521 25.8872 13.521 24.1371V19.6122C13.521 16.1883 12.3007 15.0076 10.0025 14.0202C12.2991 13.0312 13.521 11.8516 13.521 8.42818V3.90165C13.5218 2.1515 10.8832 0.706055 8.6342 0.706055ZM6.82698 24.1391H5.59939V15.6182H6.77898C6.77898 15.6182 8.47394 16.6072 8.47394 19.8784C8.47394 23.1497 6.82698 24.1391 6.82698 24.1391ZM6.77817 12.4226H5.59857V3.90165H6.82617C6.82617 3.90165 8.4715 4.89064 8.4715 8.16191C8.4715 11.4332 6.77817 12.4226 6.77817 12.4226Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M18.8721 0.666992C18.188 4.01474 17.2109 27.3337 17.2109 27.3337H23.0276L22.8291 15.6171H25.0341L24.834 27.3337H30.6506C30.6506 27.3337 29.6744 4.01474 28.9422 0.666992H18.8721ZM22.8274 12.4215C22.8762 9.03616 23.2216 6.25898 23.4656 3.86259H24.3939C24.5895 6.25938 24.9832 9.03616 24.9832 12.4215H22.8274Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M42.1561 13.9821C42.1561 18.1287 41.2807 21.3619 41.0363 24.1391H40.9586C40.7145 21.3619 39.8388 18.1287 39.8388 13.9821L39.1689 0.706055H33.4141L36.6681 27.3327H45.2796L48.5832 0.706055H42.8264L42.1561 13.9821Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M52.4922 27.3347H61.0926V24.1395H58.3072V15.6438H60.1783V12.4486H58.3072V3.90165H61.0926V0.706055H52.4922V27.3347Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M64.375 3.90165H66.9648V27.3347H72.7814V3.90165H75.4201V0.706055H64.375V3.90165Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M80.0315 0.668271C79.7232 0.658446 79.4161 0.710259 79.1287 0.82058C78.8413 0.9309 78.5796 1.09744 78.3594 1.31013C78.1392 1.52281 77.9652 1.77724 77.8477 2.05802C77.7302 2.3388 77.6718 2.64012 77.676 2.94375C77.69 3.54878 77.944 4.12439 78.3836 4.54743C78.8233 4.97046 79.4137 5.20732 80.0285 5.20732C80.6433 5.20732 81.2336 4.97046 81.6733 4.54743C82.1129 4.12439 82.367 3.54878 82.381 2.94375C82.3864 2.64029 82.329 2.33893 82.2124 2.05798C82.0957 1.77704 81.9222 1.52239 81.7025 1.30953C81.4827 1.09668 81.2212 0.930058 80.934 0.819816C80.6467 0.709574 80.3397 0.658013 80.0315 0.668271ZM80.0315 4.73874C79.7911 4.74464 79.5519 4.70215 79.3287 4.61389C79.1055 4.52563 78.903 4.39345 78.7335 4.22545C78.564 4.05744 78.4311 3.85714 78.343 3.63683C78.2549 3.41651 78.2134 3.1808 78.2211 2.94415C78.2211 2.47308 78.4112 2.0213 78.7495 1.6882C79.0879 1.3551 79.5469 1.16797 80.0254 1.16797C80.504 1.16797 80.9629 1.3551 81.3013 1.6882C81.6397 2.0213 81.8298 2.47308 81.8298 2.94415C81.8389 3.18014 81.7987 3.41546 81.7119 3.63561C81.6251 3.85576 81.4933 4.05608 81.3249 4.22421C81.1564 4.39234 80.9547 4.52473 80.7323 4.61322C80.5099 4.70171 80.2714 4.74443 80.0315 4.73874Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M80.9777 2.48582C80.9777 2.07541 80.6792 1.84277 80.0979 1.84277H79.2344V3.874H79.7745V3.13447H80.0011L80.4127 3.874H81.0558L80.5453 3.04918C80.6705 3.01542 80.7807 2.94186 80.8589 2.83995C80.9372 2.73805 80.9789 2.61353 80.9777 2.48582ZM80.0979 2.73927H79.7725V2.26319H80.1121C80.2923 2.26319 80.4107 2.34928 80.4107 2.49623C80.4119 2.6684 80.2834 2.73927 80.0979 2.73927Z"
+                        fill="currentColor"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="main">
+              <a href="#">COMMUNITY</a>
+            </div>
+            <div class="main">
+              <a href="#">JOBS</a>
+            </div>
+          </nav>
+        </div>
+        <div class="right">
+          <ul>
+            <li class="lang"><a href="#">EN</a></li>
+            <ul>
+              <li><a href="#">NL</a></li>
+              <li><a href="#">FR</a></li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="main1"></div>
+      <div class="main2">
+        <img
+          src="https://bavet.eu/assets/uploads/2024/01/hero-crop-1-1450x920.jpg"
+          alt="img"
+        />
+      </div>
+    </section>
+  </body>
+</html>
