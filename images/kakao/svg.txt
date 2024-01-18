@@ -1,6 +1,6 @@
 https://yoksel.github.io/url-encoder/
 
-<svg ><path d="M0 2c8.8 0 16 7.2 16 16h2V0H0v2z" fill="#fff" fill-rule="evenodd" clip-rule="evenodd"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path d="M0 2c13.3 0 24 10.7 24 24h2V0H0v2z" fill="#fff" clip-rule="evenodd"/></svg>
 
 
 <svg width="64" height="64">
