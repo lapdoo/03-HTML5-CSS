@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid {
+        width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas: "logo menu menu menu" "slide slide slide slide slide" "notice notice gallery banner banner" "ft_logo copyrighy copyrighy copyrighy sns";
+        grid-template-columns: 200px 200px 400px 200px;
+        grid-template-rows: 200px 300px 200px 100px;
+      }
+      .logo {
+        grid-area: logo;
+        background: #aaa;
+      }
+      .menu {
+        grid-area: menu;
+        background: #bbb;
+      }
+      .slide {
+        grid-area: slide;
+        background: #ccc;
+      }
+      .notice {
+        grid-area: notice;
+        background: #ddd;
+      }
+      .gallery {
+        grid-area: gallery;
+        background: #fff;
+      }
+      .banner {
+        grid-area: banner;
+        background: #eee;
+      }
+      .ft_logo {
+        grid-area: ft_logo;
+        background: #f0f0f0;
+      }
+      .copyrighy {
+        grid-area: copyrighy;
+        background: #000;
+      }
+      .sns {
+        grid-area: sns;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="logo">logo</div>
+      <div class="menu">menu</div>
+      <div class="slide">slide</div>
+      <div class="notice">notice</div>
+      <div class="gallery">gallery</div>
+      <div class="banner">banner</div>
+      <div class="ft_logo">ft_logo</div>
+      <div class="copyright">copyright</div>
+      <div class="sns">sns</div>
+    </div>
+  </body>
+</html>
