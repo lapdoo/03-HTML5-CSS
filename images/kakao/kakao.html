@@ -17,7 +17,8 @@
         color: #333;
       }
       .inner {
-        width: 1700px;
+        width: 100%;
+        max-width: 1700px;
         height: 669px;
         margin: 50px auto;
         display: flex;
@@ -96,7 +97,7 @@
         width: 100%;
       }
       .inner .boximg:not(.esg) {
-        width: 320px;
+        max-width: 320px;
       }
       .inner .txt {
         position: absolute;
@@ -139,6 +140,9 @@
       .inner .btn::after {
         right: 0;
         top: -24px;
+      }
+      .inner .btn:hover circle {
+        fill: rgba(0, 0, 0, 0.808);
       }
     </style>
   </head>
