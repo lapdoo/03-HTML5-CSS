@@ -6,12 +6,16 @@
     <title>Document</title>
     <style>
       .grid {
-        width: 1200px;
+        width: 1280px;
         margin: 0 auto;
         display: grid;
-        grid-template-areas: "logo menu menu menu" "slide slide slide slide slide" "notice notice gallery banner banner" "ft_logo copyrighy copyrighy copyrighy sns";
-        grid-template-columns: 200px 200px 400px 200px;
-        grid-template-rows: 200px 300px 200px 100px;
+        grid-template-areas:
+          "logo menu menu menu menu"
+          "slide slide slide slide slide"
+          "notice notice gallery banner banner"
+          "ft_logo ccopyright copyright copyright sns";
+        grid-template-columns: 200px 200px 400px 200px 200px;
+        grid-template-rows: 100px 300px 200px 100px;
       }
       .logo {
         grid-area: logo;
@@ -41,12 +45,13 @@
         grid-area: ft_logo;
         background: #f0f0f0;
       }
-      .copyrighy {
-        grid-area: copyrighy;
-        background: #000;
+      .copyright {
+        grid-area: copyright;
+        background: #0000004d;
       }
       .sns {
         grid-area: sns;
+        background: #f0f0f0;
       }
     </style>
   </head>
