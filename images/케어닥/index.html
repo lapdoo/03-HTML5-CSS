@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      body {
+        font-family: Arial, "맑은 고딕", sans-serif;
+      }
+      .top {
+        width: 1440px;
+        margin: 0 auto;
+        padding: 120px 0 120px 0;
+      }
+      .main {
+        text-align: center;
+      }
+      .main p {
+        margin: 0 0 15px;
+        font-size: 26px;
+      }
+      .main h3 {
+        font-size: 51px;
+      }
+      .circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 70px;
+      }
+      .box {
+        max-width: 385px;
+        width: 100%;
+        height: 363px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 25px;
+        background: url(images/section-box.png) center no-repeat;
+        background-size: 100%;
+        background-position: center;
+        text-align: center;
+      }
+      .box p {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 0 15px;
+      }
+      .box h3 {
+        font-size: 52px;
+      }
+      .icon1 {
+        flex-basis: 33%;
+      }
+      .icon2 {
+        flex-basis: 33%;
+      }
+      .icon3 {
+        flex-basis: 33%;
+      }
+      .text1 {
+        color: #84ab50;
+      }
+      .text2 {
+        color: #ff7548;
+      }
+      .text3 {
+        color: #eba94b;
+      }
+
+      @media screen and (max-width: 1024px) {
+        .grup {
+          flex-basis: 100%;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        .grup {
+          flex-basis: 100%;
+        }
+        .icon1 {
+          flex-basis: 100%;
+        }
+        .icon2 {
+          flex-basis: 100%;
+        }
+        .icon3 {
+          flex-basis: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="top">
+        <div class="main">
+          <p>더 나은 대한민국을 위한 돌봄기준 새로고침!</p>
+          <h3>케어닥의 역사가 시니어케어의 역사입니다.</h3>
+        </div>
+        <div class="circle">
+          <div class="grup">
+            <div class="box">
+              <div class="icon1">
+                <img src="images/history-icon1.png" alt="icon1" />
+                <p class="text1">누적 거래액</p>
+                <h3>1,500억원</h3>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon2">
+                <img src="images/history-icon2.png" alt="icon2" />
+                <p class="text2">케어닥의 돌봄서비스를 사용한 고객 수</p>
+                <h3>20만명</h3>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon3">
+                <img src="images/history-icon3.png" alt="icon3" />
+                <p class="text3">케어닥과 함께한 케어코디 수</p>
+                <h3>7만명</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
