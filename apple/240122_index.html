@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+      body {
+        font-family: Arial, "맑은 고딕", sans-serif;
+      }
+      header .topmenu {
+      }
+      header .topmenu nav {
+        width: 100%;
+        max-width: 996px;
+        margin: 15px auto;
+      }
+      header .topmenu nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      header .topmenu nav ul li {
+        line-height: 44px;
+        border: 1px solid green;
+      }
+      header .topmenu nav ul li a {
+        border: 1px solid blue;
+      }
+      header .topmenu nav ul li a img {
+        width: 30px;
+        vertical-align: middle;
+      }
+      header .topunder {
+        background: #fafafc;
+        height: 60px;
+      }
+      header .top_low {
+        display: flex;
+        justify-content: space-between;
+        max-width: 980px;
+        margin: 10px auto;
+      }
+      header .top_low p:nth-child(2) {
+        color: #1d1d1f;
+        font-size: 14px;
+        font-weight: normal;
+      }
+      header .top_low p:nth-child(2) a {
+        color: #0066cc;
+        font-size: 14px;
+      }
+      header .top_low p:nth-child(2) a:hover {
+        text-decoration: underline;
+      }
+      header .top_low p a {
+        font-size: 16px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="topmenu">
+          <nav>
+            <ul>
+              <li>
+                <a href="#"><img src="images/logo.svg" alt="logo" /></a>
+              </li>
+              <li><a href="#">스토어</a></li>
+              <li><a href="#">Mac</a></li>
+              <li><a href="#">iPad</a></li>
+              <li><a href="#">iPhone</a></li>
+              <li><a href="#">Watch</a></li>
+              <li><a href="#">AirPods</a></li>
+              <li><a href="#">TV 및 홈</a></li>
+              <li><a href="#">엔터테인먼트</a></li>
+              <li><a href="#">액세서리</a></li>
+              <li><a href="#">고객지원</a></li>
+              <li>
+                <a href="#"><img src="images/logo.svg" alt="logo" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/logo.svg" alt="logo" /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="topunder">
+          <div class="top_low">
+            <p><a href="#"> < </a></p>
+            <p>
+              신용카드 결제 시 최대12개월 할부 적용 가능.
+              <a href="#">더 알아보기 ></a>
+            </p>
+            <p>
+              <a href="#"> <i class="fa-solid fa-chevron-right"></i> </a>
+            </p>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>

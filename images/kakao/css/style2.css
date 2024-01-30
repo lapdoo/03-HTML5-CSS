@@ -1,0 +1,125 @@
+@charset "utf=8";
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.service {
+  width: 100%;
+  max-width: 1700px;
+  margin: 50px auto;
+}
+.service h1 {
+  display: flex;
+}
+.service h1 span img {
+  width: 72px;
+  height: 72px;
+  margin-right: 20px;
+}
+.service h1 strong {
+  line-height: 70px;
+}
+.service > ul {
+  display: flex;
+  flex-wrap: wrap;
+  height: 586px;
+  /* gap: 20px; */
+  gap: 3.4% 1.2%;
+}
+.service > ul > li {
+  flex: 1 1 45%;
+  background: #f3f3f3;
+  border-radius: 25px;
+  /* padding: 60px; */
+  padding: 3.5%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.service > ul > li h1 {
+  font-size: 30px;
+}
+.service ul.icon {
+  display: flex;
+  gap: 10px;
+}
+.service ul.icon li {
+  width: 56px;
+}
+.service ul.icon li img {
+  width: 56px;
+}
+@media screen and (max-width: 1900px) {
+  .service {
+    max-width: 1300px;
+  }
+  .service > ul {
+    height: 528px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .service {
+    max-width: 960px;
+  }
+  .service > ul {
+    height: 366px;
+  }
+  .service ul.icon li {
+    width: 46px;
+  }
+  .service ul.icon li img {
+    width: 46px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .service {
+    max-width: 720px;
+  }
+  .service > ul {
+    height: 354px;
+  }
+  .service > ul > li h2 {
+    font-size: 16px;
+  }
+  .service ul.icon li:nth-child(3) {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .service {
+    max-width: 396px;
+  }
+  .service > ul {
+    height: 420px;
+    gap: 2%;
+  }
+  .service > ul > li {
+    flex-direction: column;
+    padding: 1.5%;
+  }
+  .service > ul > li h2 {
+    line-height: 60px;
+    text-align: left;
+  }
+  .service ul.icon {
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  .service h1 span img {
+    display: none;
+  }
+  .service h1 strong {
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: -3px;
+  }
+}
