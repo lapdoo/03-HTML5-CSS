@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      section {
+        width: 100%;
+        max-width: 1700px;
+        margin: 0 auto;
+      }
+      .top {
+        width: 1500px;
+        margin: 0 auto;
+        margin-top: 100px;
+      }
+      .top h1 {
+        font-size: 48px;
+        text-align: center;
+      }
+      .item {
+        width: 1700px;
+        margin: 0 auto;
+        padding: 100px 0;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      #lottie-container {
+        position: absolute;
+        top: 100px;
+        left: 300px;
+        width: 500px;
+        height: 500px;
+      }
+      .item .img_box {
+        width: 450px;
+        height: 500px;
+      }
+      .item .img_box .thumb {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .item .img_box .thumb img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .item1 .thumb {
+        border-radius: 200px;
+      }
+      .desc .one {
+        font-size: 48px;
+        font-weight: bold;
+      }
+      .desc p span {
+        text-transform: uppercase;
+        -webkit-text-stroke: 0.8px black;
+        -webkit-text-fill-color: rgb(255, 251, 0);
+        color: transparent;
+        font-size: 48px;
+      }
+      .desc .two {
+        line-height: 35px;
+        margin-top: 30px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .desc a img {
+        margin-top: 30px;
+        width: 100px;
+        height: 30px;
+      }
+      .desc a:hover img {
+        animation: arrow 0.5s linear infinite alternate;
+      }
+      @keyframes arrow {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(10px);
+        }
+      }
+      .item .clipped {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .item .svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .clipped.path1 {
+        clip-path: url(my-clip-path);
+      }
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes fadeOut {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      .fade1 {
+        animation: fadeOut 3.5s ease-in-out 1.5s infinite alternate;
+      }
+      .fade2 {
+        opacity: 0;
+        animation: fadeIn 3.5s ease-in-out 1.5s infinite alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="top">
+        <h1>
+          인류 식생활을 향상시키는 <br />
+          글로벌 식품 기업
+        </h1>
+      </div>
+      <div class="item item1">
+        <div class="img_box">
+          <div class="thumb">
+            <img src="images/clip1.jpg" alt="clip" class="fade1" />
+            <img src="images/clip1_1.jpg" alt="clip" class="fade2" />
+          </div>
+        </div>
+        <div class="desc">
+          <p class="one">
+            보다 좋은 품질의 <br />
+            <span>제품</span>을
+          </p>
+          <p class="two">
+            자동화된 생산라인과 첨단설비, 위생적인 환경을 구축하여 <br />
+            오뚜기의 1등 제품을 우수한 품질로 제공합니다.
+          </p>
+          <a href="#"><img src="images/btn_more.svg" alt="arrow" /></a>
+        </div>
+        <div id="lottie-container"></div>
+        <script>
+          var lottieContainer = document.getElementById("lottie-container");
+          var animationData = {
+            container: lottieContainer,
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            path: "ottogi.json",
+          };
+          var anim = lottie.loadAnimation(animationData);
+        </script>
+      </div>
+      <div class="item item2">
+        <div class="desc">
+          <p class="one">
+            보다 높은 영양을 위해 <br />
+            <span>1969년</span>부터 한결같이
+          </p>
+          <p class="two">
+            식품이 사람들의 심신 건강을 지키는 영양분이 될 수 있도록 <br />
+            과거부터 현재까지 이어온 <br />그리고 앞으로도 계속 이어갈 오뚜기의
+            마음입니다.
+          </p>
+          <a href="#"><img src="images/btn_more.svg" alt="arrow" /></a>
+        </div>
+        <div class="img_box">
+          <div class="thumb">
+            <div class="clipped paht1">
+              <img src="images/clip2.jpg" alt="clip" class="fade1" />
+              <img src="images/clip2_1.jpg" alt="clip" class="fade2" />
+            </div>
+          </div>
+        </div>
+        <div id="lottie-container"></div>
+        <script>
+          var lottieContainer = document.getElementById("lottie-container");
+          var animationData = {
+            container: lottieContainer,
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            path: "ottogi2.json",
+          };
+          var anim = lottie.loadAnimation(animationData);
+        </script>
+      </div>
+      <div class="item item3">
+        <div class="img_box">
+          <div class="thumb">
+            <img src="images/clip3.jpg" alt="clip" class="fade1" />
+            <img src="images/clip3_1.jpg" alt="clip" class="fade2" />
+          </div>
+        </div>
+        <div class="desc">
+          <p class="one">
+            보다 앞선 <span>식품개발</span>에<br />노력하고 있습니다.
+          </p>
+          <p class="two">
+            오뚜기는 항상 앞장서서 창조의 기쁨과 보람을 경험하고 <br />앞선
+            식품을 우리 인류에게 선보입니다.
+          </p>
+          <a href="#"><img src="images/btn_more.svg" alt="arrow" /></a>
+        </div>
+        <div id="lottie-container"></div>
+        <script>
+          var lottieContainer = document.getElementById("lottie-container");
+          var animationData = {
+            container: lottieContainer,
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            path: "ottogi3.json",
+          };
+          var anim = lottie.loadAnimation(animationData);
+        </script>
+      </div>
+      <svg class="svg">
+        <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox">
+          <path
+            d="M0.1,0.1C0.04,0.11,0,0.17,0,0.22l0.01,0.56c0,0.05,0.04,0.11,0.1,0.13l0.3,0.08C0.45,1,0.54,1,0.59,0.99l0.32-0.08
+          c0.05-0.01,0.1-0.07,0.1-0.13L1.01,0.23c0-0.05-0.04-0.11-0.1-0.13L0.59,0.02c-0.05-0.01-0.14-0.01-0.19,0L0.1,0.1z"
+          />
+        </clipPath>
+      </svg>
+    </section>
+  </body>
+</html>
