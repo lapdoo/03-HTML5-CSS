@@ -6,75 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      input {
-        display: none;
+      * {
+        margin: 0;
+        padding: 0;
       }
-      p {
-        position: relative;
+      section {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 50px;
+        gap: 10px;
       }
-      p img {
-        position: absolute;
-        width: 300px;
-        top: 0;
-        display: none;
+      label {
+        width: 200px;
+        border-radius: 30px;
+        height: 54px;
+        line-height: 50px;
+        text-align: center;
+        cursor: pointer;
+        background: #da291c;
+        font-size: 20px;
+        color: white;
       }
-      p img.on {
-        display: block;
+      label.on {
+        background: rgba(51, 51, 51, 0.8);
+        color: rgba(255, 255, 255, 0.5);
       }
-
+      div {
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .desc {
+        width: 100vw;
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 38px;
+        font-weight: 500;
+        color: #da291c;
+      }
+      div img:hover {
+      }
       label:hover {
-        text-decoration: underline;
         cursor: pointer;
       }
     </style>
   </head>
   <body>
-    <label for="one">photo1</label>
-    <label for="two">photo2</label>
-    <label for="three">photo3</label>
-    <label for="four">photo4</label>
-    <label for="five">photo5</label>
-    <label for="six">photo6</label>
-    <p>
-      <img src="images/photo1.jpg" alt="photo1" />
-      <img src="images/photo2.jpg" alt="photo2" />
-      <img src="images/photo3.jpg" alt="photo3" />
-      <img src="images/photo4.jpg" alt="photo4" />
-      <img src="images/photo5.jpg" alt="photo5" />
-      <img src="images/photo6.jpg" alt="photo6" />
-    </p>
+    <section>
+      <label for="one">Better Food</label>
+      <label for="two">Better Life</label>
+    </section>
+    <div>
+      <p class="desc">
+        롯데중앙연구소의 노력 끝에 탄생한 Better Food를 소개합니다. <br />
+        개발부터 출시까지, 그 이면에 숨겨진 생생한 이야기를 만나보세요.
+      </p>
+      <img src="images/평가240202/krush.jpg" alt="photo1" />
+      <img src="images/평가240202/chefood.jpg" alt="photo2" />
+      <img src="images/평가240202/oing.jpg" alt="photo3" />
+    </div>
+    <div>
+      <p class="desc">
+        롯데중앙연구소의 노력 끝에 탄생한 Better Food를 소개합니다. <br />
+        개발부터 출시까지, 그 이면에 숨겨진 생생한 이야기를 만나보세요.
+      </p>
+      <img src="images/평가240202/krush.jpg" alt="photo1" />
+    </div>
+
     <script>
       function myFnc() {
-        let x = document.querySelectorAll("img");
+        let x = document.querySelectorAll("div");
         x.forEach(function (keys, items) {
           console.log(keys);
           keys.classList.remove("on");
         });
       }
-      document.getElementsByTagName("img")[0].classList.add("on");
+      document.getElementsByTagName("div")[0].classList.add("on");
       document.getElementsByTagName("label")[0].onclick = function () {
         myFnc();
-        document.getElementsByTagName("img")[0].classList.add("on");
+        document.getElementsByTagName("div")[0].classList.add("on");
       };
       document.getElementsByTagName("label")[1].onclick = function () {
         myFnc();
-        document.getElementsByTagName("img")[1].classList.add("on");
-      };
-      document.getElementsByTagName("label")[2].onclick = function () {
-        myFnc();
-        document.getElementsByTagName("img")[2].classList.add("on");
-      };
-      document.getElementsByTagName("label")[3].onclick = function () {
-        myFnc();
-        document.getElementsByTagName("img")[3].classList.add("on");
-      };
-      document.getElementsByTagName("label")[4].onclick = function () {
-        myFnc();
-        document.getElementsByTagName("img")[4].classList.add("on");
-      };
-      document.getElementsByTagName("label")[5].onclick = function () {
-        myFnc();
-        document.getElementsByTagName("img")[5].classList.add("on");
+        document.getElementsByTagName("div")[1].classList.add("on");
       };
     </script>
   </body>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      input {
+        display: none;
+      }
+      section {
+        width: 100vw;
+        display: flex;
+        margin: 30px auto;
+        justify-content: center;
+      }
+      p {
+        position: relative;
+      }
+      p img {
+        width: 100vw;
+        height: 360px;
+        position: absolute;
+        display: none;
+      }
+      p img.on {
+        display: block;
+      }
+      label {
+        margin: 50px 5px 50px 5px;
+        width: 200px;
+        line-height: 54px;
+        height: 54px;
+        border-radius: 27px;
+        text-align: center;
+        cursor: pointer;
+        background: rgba(51, 51, 51, 0.8);
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: -3px;
+        color: rgba(255, 255, 255, 0.5);
+      }
+      label.on {
+        background: #da291c;
+        color: white;
+      }
+      div {
+        display: none;
+        width: 100vw;
+        height: 360px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        line-height: 60px;
+      }
+      div p:first-child {
+        padding-top: 120px;
+        font-size: 38px;
+        font-weight: bold;
+      }
+      div p:nth-child(2) {
+        font-size: 22px;
+      }
+      div.on {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <label for="one">연구개발</label>
+      <label for="two">기초연구</label>
+      <label for="three">패키지연구</label>
+      <label for="four">기술연구</label>
+      <label for="five">안전관리</label>
+      <label for="six">연구전략</label>
+    </section>
+    <p>
+      <img src="images/평가240202/research-ban1.jpg" alt="photo1" />
+      <img src="images/평가240202/research-ban2.jpg" alt="photo2" />
+      <img src="images/평가240202/research-ban3.jpg" alt="photo3" />
+      <img src="images/평가240202/research-ban4.jpg" alt="photo4" />
+      <img src="images/평가240202/research-ban5.jpg" alt="photo5" />
+      <img src="images/평가240202/research-ban6.jpg" alt="photo6" />
+    </p>
+    <div class="desc">
+      <p>연구개발</p>
+      <p>
+        소비자의 니즈와 시장 선호도에 부합하는 신제품을 출시하고 품질을
+        개선합니다.
+      </p>
+    </div>
+    <div class="desc">
+      <p>기초연구</p>
+      <p>
+        바이오 연구, 신소재 발굴 등 개발의 기틀을 마련하고 신규 솔루션을
+        개척합니다.
+      </p>
+    </div>
+    <div class="desc">
+      <p>패키지연구</p>
+      <p>
+        제품 포장을 설계하고 디자인하여 품질 유지와 아이덴티티 강화를 이룹니다.
+      </p>
+    </div>
+    <div class="desc">
+      <p>기술연구</p>
+      <p>첨단 기술을 현장에 적용하여 식품 제조 방식의 선진화를 이끕니다.</p>
+    </div>
+    <div class="desc">
+      <p>안전관리</p>
+      <p>
+        위생 관리와 위해 사고 예방을 통해 롯데 식품 및 상품의 안전을 책임집니다.
+      </p>
+    </div>
+    <div class="desc">
+      <p>연구전략</p>
+      <p>진행 방향을 설계하고 실질적 연구 활동을 지원합니다.</p>
+    </div>
+    <script>
+      function myfnc() {
+        menu.forEach(function (keys, items) {
+          keys.classList.remove("on");
+        });
+      }
+      document.getElementsByTagName("label")[0].classList.add("on");
+      document.getElementsByTagName("img")[0].classList.add("on");
+      document.getElementsByClassName("desc")[0].classList.add("on");
+      let menu = document.querySelectorAll("label");
+      let img = document.querySelectorAll("img");
+      let txt = document.querySelectorAll("div");
+      menu.forEach(function (keys, items) {
+        keys.onclick = function () {
+          myfnc();
+          img.forEach(function (key, item) {
+            key.classList.remove("on");
+          });
+          txt.forEach(function (key, item) {
+            key.classList.remove("on");
+          });
+          menu[items].classList.add("on");
+          img[items].classList.add("on");
+          txt[items].classList.add("on");
+        };
+      });
+    </script>
+  </body>
+</html>
