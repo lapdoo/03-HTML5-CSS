@@ -57,14 +57,14 @@ header {
   font-size: 16px;
   color: #fff;
 }
-.sub_menu > .menu > li:last-child a {
+.sub_menu > .menu > li:last-of-type a {
   width: 120px;
   height: 30px;
   border: 1px solid white;
   padding: 10px 20px;
   border-radius: 30px;
 }
-.sub_menu > .menu > li:last-child a:hover {
+.sub_menu > .menu > li:last-of-type a:hover {
   border: 1px solid rgba(0, 0, 0, 0);
   background: #772511;
   transition: 0.5s ease;
