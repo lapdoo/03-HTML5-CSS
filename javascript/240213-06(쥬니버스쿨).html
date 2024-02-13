@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      section {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .top p {
+        font-size: 22px;
+        line-height: 40px;
+        padding: 0 10px;
+      }
+      .bottom {
+        font-size: 22px;
+      }
+      .bottom ul li {
+        font-size: 22px;
+      }
+      .bottom ul li span {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <button>show/hide</button>
+      <div class="top">
+        <p>
+          쥬니버스쿨을 꾸준히 사용한 만 3-6세 아동의 수학능력(수와 연산,측정,
+          기하 영역)과 인지능력(처리속도, 언어이해, 시공간 영역)이 향상됨을
+          검증하였습니다.
+        </p>
+      </div>
+      <div class="bottom">
+        <h4>[논리]</h4>
+        <ul>
+          <li><span>연구대상 |</span> 3-6세 아동 100명</li>
+          <li><span>연구도구 |</span> 한국 웩슬러 유아지능검사도구</li>
+          <li><span>연구기간 |</span> 4주</li>
+          <li>
+            <span>연구기관 |</span> 서울대 아동가족학과 박유정 교수 연구실
+          </li>
+        </ul>
+      </div>
+      <div class="bottom">
+        <h4>[수학]</h4>
+        <ul>
+          <li><span>연구대상 |</span> 3-6세 아동 98명</li>
+          <li><span>연구도구 |</span> 유아 그림수학능력 검사도구</li>
+          <li><span>연구기간 |</span> 10주</li>
+          <li><span>연구기관 |</span> 중앙대 유아 교육과 조형숙 교수 연구실</li>
+        </ul>
+      </div>
+      <p id="demo"></p>
+    </section>
+    <script>
+      let btn = document.querySelector("button");
+      let bool = true;
+      btn.onclick = function () {
+        if (bool) {
+          document.getElementById("demo").innerHTML = "";
+          this.innerHTML = "hide";
+        } else {
+          document.querySelectorAll("div").innerHTML =
+            '<img src="images/photo1.jpg">';
+          this.innerHTML = "show";
+        }
+      };
+      bool = !bool;
+    </script>
+  </body>
+</html>

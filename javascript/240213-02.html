@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="demo">
+      <li><a href="#" target="_new">네이버</a></li>
+      <li><a href="#" target="_new">다음</a></li>
+      <li><a href="#" target="_new">구글</a></li>
+    </ul>
+    <script>
+      let adr = [
+        "https://www.naver.com",
+        "https://www.daum.net",
+        "https://www.goggle.com",
+      ];
+      let link = document.querySelectorAll("#demo li a");
+      link.forEach(function (value, index) {
+        value.onclick = function (event) {
+          event.preventDefault();
+          this.style.color = "red";
+          console.log(index);
+          //   location.href = adr[index];
+          window.open(adr[index], "_new");
+        };
+      });
+      const numbers = [45, 4, 9, 16, 25];
+      let txt = 0;
+      numbers.forEach(myFunction);
+      document.write(txt);
+      function myFunction(value, index, array) {
+        console.log(value);
+        txt += value + "<br>";
+        document.write(txt);
+      }
+    </script>
+  </body>
+</html>
