@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  z-index: 1;
+}
+header .head {
+  transition: 0.3s;
+}
+header .head .top {
+  position: relative;
+  width: 1800px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .head .top ul.menu {
+  display: flex;
+  width: 1000px;
+  justify-content: space-between;
+}
+header .head .top ul.menu > li:first-of-type {
+  position: absolute;
+  width: 380px;
+  top: 0px;
+  left: 0;
+}
+header .head .top ul.menu > li:first-of-type ul {
+  width: 390px;
+  display: block;
+}
+header .head .top ul.menu > li:first-of-type ul li:first-of-type {
+  width: 390px;
+}
+header .head .top ul.menu > li:first-child ul li {
+  width: 180px;
+  display: inline-flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+header .head .top ul.menu > li:first-of-type ul li a {
+  padding: 10px 0;
+  border-bottom: 0.5px solid #ccc;
+}
+
+header .head .top ul.menu > li {
+  position: relative;
+  /* width: calc(100% / 6); */
+  height: 100%;
+  line-height: 80px;
+}
+header .head .top ul.menu > li:nth-child(6):hover {
+  fill: black;
+}
+header .head .top ul.menu > li > a {
+  color: #ffffff;
+  font-weight: bold;
+}
+header .head .top ul.menu > li > a.on {
+  color: #333;
+}
+header .head .top .sub_logo li:hover a,
+header .head .top ul.menu > li:hover > a {
+  color: #70d44b;
+}
+header .head .top ul.menu > li .sub {
+  position: absolute;
+  width: 675px;
+  left: 0;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: 2;
+  transition: 0s;
+}
+header .head .top ul.menu > li .sub.on {
+  transition: 0.3s;
+  opacity: 1;
+}
+/* header .head .top ul.menu > li:nth-child(3) .sub {
+  opacity: 1;
+} */
+
+header .head .top ul.menu > li .sub > ul li {
+  flex: 1;
+  line-height: 40px;
+}
+header .head .top ul.menu > li .sub > ul li > a {
+  font-weight: 500;
+}
+header .head .top ul.menu > li .sub > ul li > a:hover {
+  color: #70d44b;
+}
+.lang {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.serch {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background: url(../images/search_white_icon.svg) center / cover no-repeat;
+}
+.serch:hover {
+  background: url(../images/search_icon.svg) center / cover no-repeat;
+}
+.earth {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background: url(../images/country_white_icon.svg) center / cover no-repeat;
+}
+.earth:hover {
+  background: url(../images/country_icon.svg) center / cover no-repeat;
+}
+section {
+  width: 1920px;
+  height: 100vh;
+}
+section img {
+  width: 100%;
+  height: 100%;
+}
