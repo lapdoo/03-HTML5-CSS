@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="css/aos.css" rel="stylesheet" />
+    <style>
+      section {
+        width: 1280px;
+        margin: 300px auto;
+        display: flex;
+        justify-content: space-between;
+      }
+      div {
+        width: 200px;
+        height: 200px;
+        background: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div data-aos="fade-up" data-aos-duration="3000">fade-up</div>
+    </section>
+    <section>
+      <div
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
+        fade-down
+      </div>
+    </section>
+    <section>
+      <div data-aos="fade-left" data-aos-offset="500" data-aos-duration="500">
+        fade-left
+      </div>
+    </section>
+    <section><div data-aos="slide-up">slide-up</div></section>
+    <section><div data-aos="slide-down">slide-down</div></section>
+    <section><div data-aos="slide-right">slide-right</div></section>
+    <section><div data-aos="slide-left">slide-left</div></section>
+    <section>
+      <div data-aos="flip-left" data-aos-delay="0">flip-left</div>
+      <div data-aos="flip-right" data-aos-delay="500">flip-right</div>
+      <div data-aos="flip-up" data-aos-delay="1000">flip-up</div>
+      <div data-aos="flip-down" data-aos-delay="1500">flip-down</div>
+    </section>
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, //  기본 400
+        easing: "ease-in-out-quad",
+        offset: 50, //기본 120 스크롤이 얼마나 반응할지를 설정 해당요소가 스크롤링이 50픽셀이상 진행일때 애니메이션이 시작되도록 지정(화면 아래에서부터의 거리)
+        once: true,
+      });
+    </script>
+  </body>
+</html>
