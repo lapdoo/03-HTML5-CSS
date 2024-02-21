@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      //   $(document).ready(function () {});
+      $(function () {
+        $("div:has(p)").css("font-size", "50px");
+        $(":empty").text("empty");
+        $("p:parent").css("color", "red");
+        $("p:last").hide();
+        $("p:hidden").show();
+        $("p:visible").text("visible");
+      });
+    </script>
+  </head>
+  <body>
+    <div><p>문단태그</p></div>
+    <div>문단태그</div>
+    <div></div>
+    <p>hidden</p>
+  </body>
+</html>

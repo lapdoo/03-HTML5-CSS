@@ -16,9 +16,27 @@ body {
 section {
   width: 100%;
   height: 953px;
-  background: url(../images/main_visual1.png) center no-repeat;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  display: block;
 }
 header {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 95px;
   margin: 0 auto;
@@ -122,6 +140,7 @@ header {
   color: white;
   letter-spacing: 30px;
 }
+
 .top_desc {
   position: absolute;
   bottom: 50px;

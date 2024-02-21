@@ -11,9 +11,30 @@
       crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <section>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/main_visual1.png" alt="main_visual1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/main_visual2.png" alt="main_visual2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/main_visual3.png" alt="main_visual3" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/main_visual4.png" alt="main_visual4" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
       <header>
         <div class="head">
           <ul class="menu">
@@ -54,6 +75,7 @@
         <div class="slide_pc">
           <p>ACADEMY · ACADEMY ·</p>
         </div>
+
         <div class="top_desc">
           <p>
             <strong>메테우스아카데미</strong><br />자산운용에 관심이 있는 분들을
@@ -196,9 +218,120 @@
         <img src="images/cate_class.png" alt="cate1" />
       </div>
       <div class="click_list">
-        <h2>메테우스자산운용이 추천하는, 분야별 CLASS</h2>
-        <h3>메테우스자산운용이 추천하는 분야별 과정을 확인하세요.</h3>
+        <div class="txt">
+          <h2>메테우스자산운용이 추천하는, 분야별 CLASS</h2>
+          <h3>메테우스자산운용이 추천하는 분야별 과정을 확인하세요.</h3>
+        </div>
+        <div class="class_btn">
+          <ul>
+            <li>주식</li>
+            <li>부동산</li>
+            <li>펀드</li>
+            <li>회계</li>
+            <li>리츠</li>
+            <li>법률</li>
+            <li>세무</li>
+          </ul>
+          <div class="class_btn_show">
+            <ul class="class_btn_list">
+              <li>
+                <a href="#">
+                  <h3>주식운용의 이해(IPO)</h3>
+                  <h4>전동자산 중 주식에 대한 기초 강의 입니다.</h4>
+                </a>
+              </li>
+            </ul>
+            <ul class="class_btn_list">
+              <li>
+                <a href="#">
+                  <h3>사업 구조 및 사업 비히클</h3>
+                  <h4>
+                    부동산 간접투자의 정의를 알고 사용 되는 펀드의 특성을 이해
+                    하며 현황을 설명하는 강의입니다.
+                  </h4>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <h3>재무모델 심화 및 재무관리 분석</h3>
+                  <h4>
+                    제무모델을 설계하는 운용사, 증권사, 자문사, 회계법인의 임,
+                    직원 모든 분께 필요한 실전 강의입니다.
+                  </h4>
+                </a>
+              </li>
+            </ul>
+            <ul class="class_btn_list">
+              <li>
+                <a href="#">
+                  <h3>펀드 상품구조의 이해</h3>
+                  <h4>
+                    펀드 상품구조 이해를 통해 투자(업무)역량 및 전문성을
+                    강화하기 위한 과장입니다.
+                  </h4>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <h3>
+                    펀드투자방법 (II) : 펀드로 연금투자 및 기관전용사모펀드(PEF)
+                  </h3>
+                  <h4>
+                    이 강의는 퇴직연금(DC, IRP)과 연금저축펀드를 운용하는 분들을
+                    위한 강의입니다.
+                  </h4>
+                </a>
+              </li>
+            </ul>
+            <ul class="class_btn_list">
+              <li>
+                <a href="#">
+                  <h3>펀드 회계(주식, 부동산) 및 사업관리</h3>
+                  <h4>
+                    주식형 및 부동산형 실무와 관련된 오퍼레이션 업무 및 펀드
+                    회계처리에 대한 강의입니다.
+                  </h4>
+                </a>
+              </li>
+            </ul>
+            <ul class="class_btn_list">
+              <li>
+                <a href="#">
+                  <h3>REITs(Real Estate Investment Trusts)</h3>
+                  <h4>
+                    국내 리츠시장에 대한 개요와 함께 리츠의 기본구조에 관한
+                    강의입니다.
+                  </h4>
+                </a>
+              </li>
+            </ul>
+            <ul class="class_btn_list">
+              <li>
+                <a href="#">
+                  <h3>사모부동산펀드의 유형과 법적쟁점</h3>
+                  <h4>
+                    사모 부동산 펀드와 관련하여 각 펀드의 유형에 따라 발생할 수
+                    있는 법률적 쟁점에 대한 강의입니다.
+                  </h4>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>
