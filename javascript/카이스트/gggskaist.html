@@ -6,6 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/gggs.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $(function () {
+        $(".menu li").hover(
+          function () {
+            let i = $(this).index();
+            console.log(i);
+            let ht = $(".sub").eq(i).height();
+            console.log(ht);
+            $(".lnb").height(0);
+            $(".lnb").eq(i).height(ht);
+            $("header").css("background", "#fff");
+            $(".menu li a").css("color", "#333");
+            $(".logo").addClass("on");
+          },
+          function () {
+            $(".lnb").height(0);
+            $("header").css("background", "none");
+            $(".menu li a").css("color", "#fff");
+            $(".logo").removeClass("on");
+          }
+        );
+      });
+    </script>
   </head>
   <body>
     <section>
@@ -144,6 +168,6 @@
         </div>
       </header>
     </section>
-    <script src="js/gggs.js"></script>
+    <!-- <script src="js/gggs.js"></> -->
   </body>
 </html>
