@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p.on {
+        width: 100px;
+        height: 100px;
+        background: #fc0;
+      }
+      button {
+        width: 100px;
+        height: 30px;
+        border: none;
+      }
+    </style>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(function () {
+        $("button").each(function (i, e) {
+          let bg = $(this).data("bg");
+          //   $(this).css({ backgroundColor: bg, cursor: "pointer" });
+          $(this).css({ backgroundColor: bg, cursor: "pointer" });
+          $(e).click(function () {
+            $("body").css({ backgroundColor: bg });
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p></p>
+    <button id="one" data-bg="#aaa">aaa</button>
+    <button id="two" data-bg="#bbb">bbb</button>
+    <button id="three" data-bg="#ccc">ccc</button>
+    <button id="four" data-bg="#ddd">ddd</button>
+  </body>
+</html>

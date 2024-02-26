@@ -42,7 +42,7 @@
           console.log(event.keyCode);
           if (event.keyCode == 37) {
             let txt = $("button:first-of-type").text();
-            $("input").val(txt);
+            $("#contents").val(txt);
             $("div").css("left", "-=10px");
           } else if (event.keyCode == 39) {
             let txt = $("button:nth-of-type(2)").text();
