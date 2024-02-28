@@ -1,5 +1,12 @@
 @charset "utf-8";
-
+@font-face {
+  font-family: "IvyMode";
+  src: url("../../../webfonts/ivy-mode-4.ttf") format("truetype");
+}
+@font-face {
+  font-family: "MaruBuri";
+  src: url("../../../webfonts/MaruBuri-Regular.ttf") format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
@@ -11,13 +18,26 @@ a {
   text-decoration: none;
 }
 header {
-  width: 100vw;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
   height: 953px;
+  overflow: hidden;
+}
+.hd_fixed {
+  position: fixed;
+  z-index: 999;
 }
 .head {
-  width: 100%;
-  max-width: 1920px;
-  height: 158px;
+  position: relative;
+  width: 1450px;
+  height: 94px;
+  padding-top: 50px;
+  margin: 0 226.5px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
 }
 .head .logo {
   width: 245px;
@@ -30,8 +50,192 @@ header {
   object-fit: cover;
 }
 .head .right_menu {
+  margin-top: 50px;
   width: 40px;
   height: 40px;
 }
-.head .right_menu .path1 {
+input {
+  display: none;
+}
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+.bar1,
+.bar2 {
+  display: block;
+  width: 35px;
+  height: 1px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+#menu:checked ~ .container .bar1,
+label.container:hover .bar1 {
+  transform: rotate(-45deg);
+}
+#menu:checked ~ .container .bar2,
+label.container:hover .bar2 {
+  transform: translate(0, -6px) rotate(45deg);
+}
+.main {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.main_banner {
+  width: 100%;
+  /* border-radius: 0 0 50% 50%;
+  transform: translateX(-35vw); */
+  overflow: hidden;
+}
+.text {
+  position: absolute;
+  bottom: 200px;
+  width: 100%;
+  z-index: 9999;
+  margin: 0 auto;
+}
+.text h2 {
+  font-family: "IvyMode", sans-serif;
+  font-size: 80px;
+  font-weight: 100;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+.cir_sp {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.main_banner .slide {
+  width: 170vw;
+  height: 953px;
+  border-radius: 0 0 50% 50%;
+  overflow: hidden;
+  transform: translateX(-35vw);
+}
+.main_banner iframe {
+  width: 110vw;
+  height: 62vw;
+}
+
+.img_slide {
+  width: 100vw;
+  position: relative;
+  transform: translateX(35vw);
+}
+
+#my .swiper {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+#my .swiper-slide {
+  width: 100%;
+  height: 953px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+}
+#my .swiper-slide > div {
+  overflow: hidden;
+}
+#my .swiper-slide img {
+}
+section {
+  padding-top: 275px;
+  width: 1450px;
+  height: 1500px;
+  margin: 0 226.5px;
+}
+.con {
+  height: 987px;
+  display: flex;
+  justify-content: space-between;
+  padding: 210px 0;
+}
+.left_con,
+.right_con {
+  width: 495px;
+  height: 630px;
+  padding: 0 115px;
+}
+#con .swiper {
+  width: 100%;
+  height: 100%;
+}
+#con > .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+}
+#con > .swiper-slide > div {
+  overflow: hidden;
+}
+#con > .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.con_txt {
+  margin-top: 20px;
+}
+.con_txt p {
+  font-size: 15px;
+  font-family: "MaruBuri";
+  font-weight: normal;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+.right_txt {
+  margin: 170px 0 85px 30px;
+}
+.right_txt p {
+  font-family: "IvyMode", sans-serif;
+  font-size: 40px;
+  font-weight: lighter;
+}
+.con2 {
+  width: 100%;
+  height: 800px;
+  padding: none;
+  background: url(../images/main_visual_bg.jpg) center no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mov {
+  position: relative;
+
+  max-width: 435px;
+  height: 623px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid white;
+  transition: 0.8s;
+}
+.mov video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transform: scale(1.05);
 }

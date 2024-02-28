@@ -4,16 +4,271 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
-      <div class="head">
-        <div class="logo"><img src="images/logo.png" alt="logo" /></div>
-        <div class="right_menu">
-          <p class="path1"></p>
-          <p class="path2"></p>
+      <div class="hd_fixed">
+        <div class="head">
+          <div class="logo"><img src="images/logo.png" alt="logo" /></div>
+          <div class="right_menu">
+            <input type="checkbox" id="menu" />
+            <label class="container" for="menu">
+              <span class="bar1"></span>
+              <span class="bar2"></span>
+            </label>
+          </div>
         </div>
       </div>
     </header>
+    <div class="main">
+      <div class="main_banner">
+        <div class="text">
+          <h2>Dreamy Landscape</h2>
+        </div>
+        <div class="btn1">
+          <button class="prev">prev<span class="line"></span></button>
+          <div class="cir_sp"><span class="circle"></span></div>
+          <button class="next"><span class="line"></span> next</button>
+        </div>
+        <div class="slide">
+          <div class="img_slide">
+            <div class="swiper mySwiper" id="my">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div>
+                    <iframe
+                      class="random2"
+                      src="https://player.vimeo.com/video/746758674?autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;background=0&amp;muted=1&amp;autopause=0&amp;controls=-0"
+                      style="z-index: 1; overflow: hidden"
+                      frameborder="0"
+                      allow="autoplay;loop fullscreen"
+                      allowfullscreen=""
+                      data-ready="true"
+                    ></iframe>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <iframe
+                      class="random1"
+                      src="https://player.vimeo.com/video/744867925?autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;background=0&amp;muted=1&amp;autopause=0&amp;controls=-0"
+                      style="z-index: 1; overflow: hidden"
+                      frameborder="0"
+                      allow="autoplay;loop fullscreen"
+                      allowfullscreen=""
+                      data-ready="true"
+                    ></iframe>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div><img src="images/1.jpg" alt="1" /></div>
+                </div>
+                <div class="swiper-slide">
+                  <div><img src="images/2.jpg" alt="2" /></div>
+                </div>
+                <div class="swiper-slide">
+                  <div><img src="images/3.jpg" alt="3" /></div>
+                </div>
+                <div class="swiper-slide">
+                  <div><img src="images/4.jpg" alt="4" /></div>
+                </div>
+                <div class="swiper-slide">
+                  <div><img src="images/5.jpg" alt="5" /></div>
+                </div>
+                <div class="swiper-slide">
+                  <div><img src="images/6.jpg" alt="6" /></div>
+                </div>
+                <div class="swiper-slide">
+                  <div><img src="images/7.jpg" alt="7" /></div>
+                </div>
+                <div class="swiper-slide">
+                  <div><img src="images/8.jpg" alt="8" /></div>
+                </div>
+                <div class="swiper-slide">
+                  <div><img src="images/9.jpg" alt="9" /></div>
+                </div>
+                <div class="swiper-slide">
+                  <div><img src="images/10.jpg" alt="10" /></div>
+                </div>
+                <div class="swiper-slide">
+                  <div><img src="images/11.jpg" alt="11" /></div>
+                </div>
+                <div class="swiper-slide">
+                  <div><img src="images/12.jpg" alt="12" /></div>
+                </div>
+                <div class="swiper-slide">
+                  <div><img src="images/13.jpg" alt="13" /></div>
+                </div>
+                <div class="swiper-slide">
+                  <div><img src="images/14.jpg" alt="14" /></div>
+                </div>
+                <div class="swiper-slide">
+                  <div><img src="images/15.jpg" alt="15" /></div>
+                </div>
+                <div class="swiper-slide">
+                  <div><img src="images/16.jpg" alt="16" /></div>
+                </div>
+                <div class="swiper-slide">
+                  <div><img src="images/17.jpg" alt="17" /></div>
+                </div>
+                <div class="swiper-slide">
+                  <div><img src="images/18.jpg" alt="18" /></div>
+                </div>
+                <div class="swiper-slide">
+                  <div><img src="images/19.jpg" alt="19" /></div>
+                </div>
+                <div class="swiper-slide">
+                  <div><img src="images/20.jpg" alt="20" /></div>
+                </div>
+                <div class="swiper-slide">
+                  <div><img src="images/21.jpg" alt="21" /></div>
+                </div>
+                <div class="swiper-slide">
+                  <div><img src="images/22.jpg" alt="22" /></div>
+                </div>
+                <div class="swiper-slide">
+                  <div><img src="images/23.jpg" alt="23" /></div>
+                </div>
+                <div class="swiper-slide">
+                  <div><img src="images/24.jpg" alt="24" /></div>
+                </div>
+                <div class="swiper-slide">
+                  <div><img src="images/25.jpg" alt="25" /></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="room_txt">
+        <p>ROOMS #</p>
+      </div>
+      <div class="con">
+        <div class="left_con">
+          <div class="swiper mySwiper2" id="con">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div><img src="images/room1/1.jpg" alt="1" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div><img src="images/room1/2.jpg" alt="2" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div><img src="images/room1/3.jpg" alt="3" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div><img src="images/room1/4.jpg" alt="4" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div><img src="images/room1/5.jpg" alt="5" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div><img src="images/room1/6.jpg" alt="6" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div><img src="images/room1/7.jpg" alt="7" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div><img src="images/room1/8.jpg" alt="8" /></div>
+              </div>
+            </div>
+          </div>
+          <div class="con_txt">
+            <p>
+              바다의 이른 아침은 일출과 함께 몽환적인 풍경을 만들어 내고
+              <br />늦은 오후는 낮의 온기를 품은 채 형용할 수 없는 환상을 만들어
+              냅니다 <br />눈이 부시게 아름다운 낭만에 시간을 잊고 <br />오롯이
+              사랑하는 사람과의 소중한 순간만을 담을 수 있는 곳
+            </p>
+            <p>
+              아마레........ 이탈리아어로 반하다 좋아하다 이런 뜻을 갖고
+              있습니다<br />
+              이 곳 아마레의 감성 공간 속으로 들어 오세요 <br />하얗고 이국적인
+              건물에 한번 반하고 문을 열고 들어서면 통창 너머로 보이는 바다에
+              다시 한번 반하고<br />
+              각기 다른 특별한 분위기에 또다시 반하지 않을 수 없는 풀빌라 아마레
+              입니다
+            </p>
+          </div>
+        </div>
+        <div class="right_con">
+          <div class="right_txt">
+            <p>
+              Ocean view with <br />
+              added sensitivity
+            </p>
+          </div>
+          <div class="swiper mySwiper2" id="con">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div><img src="images/room2/1.jpg" alt="1" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div><img src="images/room2/2.jpg" alt="2" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div><img src="images/room2/3.jpg" alt="3" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div><img src="images/room2/4.jpg" alt="4" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div><img src="images/room2/5.jpg" alt="5" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div><img src="images/room2/6.jpg" alt="6" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div><img src="images/room2/7.jpg" alt="7" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div><img src="images/room2/8.jpg" alt="8" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="sec_two">
+      <div class="con2">
+        <div class="mov">
+          <video src="video/main_video.mp4" autoplay muted loop></video>
+          <img src="images/main_visual_inner.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          pauseOnMouseEnter: true,
+        },
+      });
+    </script>
   </body>
 </html>
