@@ -89,7 +89,7 @@ label.container:hover .bar2 {
   transform: translateX(-35vw); */
   overflow: hidden;
 }
-.text {
+.ban_desc {
   position: absolute;
   bottom: 200px;
   width: 100%;
@@ -103,6 +103,11 @@ label.container:hover .bar2 {
   margin: 0 auto;
   color: white;
   text-align: center;
+  justify-content: center;
+}
+.btn1 {
+  width: 1450px;
+  display: flex;
   justify-content: center;
 }
 .cir_sp {
@@ -198,7 +203,7 @@ section {
 .con_txt p {
   font-size: 15px;
   font-family: "MaruBuri";
-  font-weight: normal;
+  font-weight: 600;
   white-space: nowrap;
   margin-bottom: 20px;
 }

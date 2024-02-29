@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>test Hanmi</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100vh;
+      }
+      body {
+        background: #eee;
+        font-family: "Pretendard", Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #fff;
+        width: 1903px;
+        height: 92px;
+        z-index: 10;
+      }
+      .head {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+      }
+      .head .logo {
+        margin: 22px 60px 0 22px;
+      }
+      .head .menu {
+        display: flex;
+      }
+      .head .menu .con {
+        margin: 27px 10px 0 10px;
+      }
+      .head .menu .con a {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 0 20px;
+        color: black;
+        text-decoration: none;
+      }
+      .banner {
+        width: 1903px;
+        height: 1500px;
+      }
+      .swiper {
+        width: 100%;
+        height: 953px;
+      }
+      .mySwiper {
+        position: relative;
+        overflow: hidden;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .swiper-slide video,
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-slide .txt {
+        width: 1445px;
+        margin-left: 220px;
+        position: absolute;
+        line-height: 10px;
+        left: 0;
+        color: white;
+        text-align: left;
+        bottom: 280px;
+        letter-spacing: 1px;
+      }
+      .swiper-slide .txt h1 {
+        font-size: 80px;
+      }
+      .swiper-slide .txt p {
+        font-size: 30px;
+        line-height: 45px;
+        padding-bottom: 60px;
+      }
+      .swiper-slide .txt a {
+        position: relative;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+      }
+      .swiper-slide .txt .line {
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        bottom: -15px;
+        width: 191px;
+        height: 1px;
+        background: #fff;
+      }
+      .swiper-slide .txt .line::after {
+        content: "";
+        position: absolute;
+        width: 14px;
+        height: 1px;
+        background: #fff;
+        display: block;
+        right: 0;
+        bottom: 5.5px;
+        transform: rotate(45deg);
+      }
+      .swiper-horizontal > .swiper-pagination-bullets,
+      .swiper-pagination-bullets.swiper-pagination-horizontal,
+      .swiper-pagination-custom,
+      .swiper-pagination-fraction {
+        width: 200px;
+        left: 1400px;
+        bottom: 250px;
+      }
+      .swiper-pagination-bullet {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+        color: #ffffff;
+        opacity: 1;
+        background: none;
+      }
+      .swiper-pagination-bullet-active {
+        border: 1px solid #fff;
+        border-radius: 50%;
+        color: #fff;
+        background: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <div class="logo"><img src="images/logo_gnb.svg" alt="logo" /></div>
+        <div class="menu">
+          <div class="con">
+            <a href="#">About us</a>
+          </div>
+          <div class="con">
+            <a href="#">Sience</a>
+          </div>
+          <div class="con">
+            <a href="#">Business</a>
+          </div>
+          <div class="con">
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="banner">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <video src="images/HANMI.mp4" autoplay muted loop></video>
+            <div class="txt">
+              <h1>The Hanmi Way</h1>
+              <p>
+                No path started as a path. <br />We seek a better future for
+                humanity on it.
+              </p>
+              <a href="#"
+                >View More
+                <span class="line"></span>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/2.png" alt="2" />
+            <div class="txt">
+              <h1>Innovation</h1>
+              <p>
+                Korea's leading R&D-centric healthcare company.
+                <br />We create never-before-seen innovation through bold
+                challenges.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/3.png" alt="3" />
+            <div class="txt">
+              <h1>Respect, Trust, Integrity</h1>
+              <p>
+                We lead the global healthcare industry
+                <br />through Respect, Trust, and Integrity.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+          },
+        },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+  </body>
+</html>
