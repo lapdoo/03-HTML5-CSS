@@ -32,9 +32,9 @@
             <h2>Dreamy Landscape</h2>
           </div>
           <div class="btn1">
-            <button class="prev">prev<span class="line"></span></button>
+            <button class="prev">Prev<span class="line"></span></button>
             <div class="cir_sp"><span class="circle"></span></div>
-            <button class="next"><span class="line"></span> next</button>
+            <button class="next"><span class="line"></span> Next</button>
           </div>
         </div>
         <div class="slide">
@@ -247,6 +247,24 @@
         </div>
       </div>
     </div>
+    <div class="midle_con">
+      <div class="h_img_con">
+        <h2>THE AMARE</h2>
+        <h4>Emotional Poolvilla</h4>
+      </div>
+    </div>
+    <div class="bot_con">
+      <div class="bot_txt">
+        <h2>
+          Oceanview <br />
+          with
+        </h2>
+        <h2>
+          Added sensitivity <br />
+          Place
+        </h2>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
@@ -254,8 +272,13 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-        pagination: {
-          el: ".swiper-pagination",
+        slidesPerView: 1,
+        spaceBetween: 20,
+        effect: "fade",
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          pauseOnMouseEnter: true,
         },
       });
       var swiper2 = new Swiper(".mySwiper2", {
@@ -264,7 +287,9 @@
           el: ".swiper-pagination",
           clickable: true,
         },
-
+        slidesPerView: 1,
+        spaceBetween: 20,
+        effect: "fade",
         loop: true,
         autoplay: {
           delay: 5000,
