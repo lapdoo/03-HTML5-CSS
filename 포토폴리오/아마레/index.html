@@ -148,17 +148,69 @@
         </div>
       </div>
     </div>
-
     <section>
-      <div class="room_txt">
-        <p>ROOMS #</p>
-      </div>
-      <div class="con">
+      <div id="Scon">
+        <div class="innerWrap">
+          <h1>
+            Ocean view with <br />
+            added sensitivity
+          </h1>
+          <div class="inner">
+            <p>ROOMS#AMARE</p>
+            <div class="rightImg">
+              <img src="images/room2/1.jpg" alt="1" />
+            </div>
+          </div>
+          <div class="inner">
+            <p>ROOMS#1A</p>
+            <div class="rightImg">
+              <img src="images/room2/2.jpg" alt="2" />
+            </div>
+          </div>
+          <div class="inner">
+            <p>ROOMS#1B</p>
+            <div class="rightImg">
+              <img src="images/room2/3.jpg" alt="3" />
+            </div>
+          </div>
+          <div class="inner">
+            <p>ROOMS#PRIVATE</p>
+            <div class="rightImg">
+              <img src="images/room2/4.jpg" alt="4" />
+            </div>
+          </div>
+          <div class="inner">
+            <p>ROOMS#3A</p>
+            <div class="rightImg">
+              <img src="images/room2/5.jpg" alt="5" />
+            </div>
+          </div>
+          <div class="inner">
+            <p>ROOMS#3B</p>
+            <div class="rightImg">
+              <img src="images/room2/6.jpg" alt="6" />
+            </div>
+          </div>
+          <div class="inner">
+            <p>ROOMS#4A</p>
+            <div class="rightImg">
+              <img src="images/room2/7.jpg" alt="7" />
+            </div>
+          </div>
+          <div class="inner">
+            <p>ROOMS#4B</p>
+            <div class="rightImg">
+              <img src="images/room2/8.jpg" alt="8" />
+            </div>
+          </div>
+        </div>
         <div class="left_con">
           <div class="swiper mySwiper2" id="con">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div><img src="images/room1/1.jpg" alt="1" /></div>
+                <div>
+                  <img src="images/room1/1.jpg" alt="1" />
+                </div>
               </div>
               <div class="swiper-slide">
                 <div><img src="images/room1/2.jpg" alt="2" /></div>
@@ -201,7 +253,8 @@
             </p>
           </div>
         </div>
-        <div class="right_con">
+      </div>
+      <!-- <div class="right_con">
           <div class="right_txt">
             <p>
               Ocean view with <br />
@@ -236,8 +289,8 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </div> 
+      </div>-->
     </section>
     <div class="sec_two">
       <div class="con2">
@@ -254,17 +307,50 @@
       </div>
     </div>
     <div class="bot_con">
+      <div class="BottomImg">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/bottom/3.jpg" alt="3" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/bottom/1.jpg" alt="1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/bottom/2.jpg" alt="2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/bottom/4.jpg" alt="4" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/bottom/5.jpg" alt="5" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/bottom/6.jpg" alt="6" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/bottom/7.jpg" alt="7" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/bottom/8.jpg" alt="8" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
       <div class="bot_txt">
-        <h2>
+        <p>
           Oceanview <br />
           with
-        </h2>
-        <h2>
+        </p>
+        <p>
           Added sensitivity <br />
           Place
-        </h2>
+        </p>
       </div>
     </div>
+    <script src="../../jquery/js/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
@@ -294,6 +380,14 @@
         autoplay: {
           delay: 5000,
           pauseOnMouseEnter: true,
+        },
+        on: {
+          slideChange: function () {
+            let i = this.activeIndex;
+            console.log(i);
+            $(".innerWrap .inner").eq(i).find(".rightImg").addClass("on");
+            $(".innerWrap .inner").eq(i).find("P").addClass("on");
+          },
         },
       });
     </script>

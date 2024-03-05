@@ -1,0 +1,18 @@
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 6px 12px;
+  color: red;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+  color: blue;
+}/*# sourceMappingURL=style.css.map */
