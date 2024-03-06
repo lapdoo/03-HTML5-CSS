@@ -98,7 +98,7 @@ label.container:hover .bar2 {
   position: absolute;
   bottom: 170px;
   width: 100%;
-  z-index: 9999;
+  z-index: 10;
   margin: 0 auto;
 }
 .text {
@@ -193,6 +193,81 @@ label.container:hover .bar2 {
   overflow: hidden;
 }
 #my .swiper-slide img {
+}
+.main_hover {
+  width: 245px;
+  height: 245px;
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+  z-index: 9999;
+}
+.main_hover .txt_circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  font-size: 30px;
+  font-family: "VentiCF", sans-serif;
+  animation: rotate_txt 30s infinite linear;
+}
+@keyframes rotate_txt {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.arrow {
+  display: flex;
+  width: 50px;
+  height: 10px;
+  align-items: center;
+  position: relative;
+  transition: 0.5s;
+}
+
+.arrow_path {
+  position: absolute;
+  right: 12px;
+  width: 7px;
+  height: 1px;
+}
+.arrow_path::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -115px;
+  top: 118px;
+  width: 100%;
+  height: 1px;
+  background: white;
+  transform: rotate(45deg);
+}
+.arrow_path::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -115px;
+  top: 122px;
+  width: 100%;
+  height: 1px;
+  background: white;
+  transform: rotate(-45deg);
+}
+.arrow_line {
+  position: absolute;
+  top: 125px;
+  right: -100px;
+  width: 100%;
+  height: 1px;
+  background: white;
+}
+.main_hover:hover .arrow {
+  transform: translateX(10px);
 }
 section {
   padding-top: 275px;
@@ -330,12 +405,19 @@ section {
 }
 .bot_con {
   width: 1450px;
-  margin: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
 }
 .bot_con .bot_txt {
+  position: absolute;
+  top: 0;
+  left: -110px;
   width: 700px;
   height: 500px;
   transform: rotate(90deg);
+  z-index: 10;
 }
 .bot_con .bot_txt p:first-of-type {
   padding-bottom: 120px;
@@ -351,4 +433,184 @@ section {
   line-height: 90px;
   color: #bfa694;
   font-family: "IvyMode", sans-serif;
+}
+.BottomImg {
+  position: relative;
+  width: 653px;
+  height: 735px;
+}
+.BottomImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bottomimg_A {
+  position: absolute;
+  left: 39%;
+  bottom: -130px;
+  width: 170px;
+  height: 170px;
+  z-index: 10;
+}
+.bottomimg_A .bottomimg_arrow {
+  width: 170px;
+  height: 170px;
+  border: 1px solid #dbc8bb;
+  border-radius: 50%;
+  position: relative;
+}
+.botimg_btn_path {
+  width: 50px;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.botimg_btn_path::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 86px;
+  right: 69px;
+  width: 10px;
+  height: 1px;
+  transform: rotate(45deg);
+  background: #dbc8bb;
+}
+.botimg_btn_path::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 80px;
+  right: 69px;
+  width: 10px;
+  height: 1px;
+  transform: rotate(-45deg);
+  background: #dbc8bb;
+}
+.botimg_btn_line {
+  position: absolute;
+  bottom: 83px;
+  right: 70px;
+  width: 20px;
+  height: 1px;
+  background: #dbc8bb;
+}
+.btn_bottom {
+  width: 22%;
+  padding-left: 80px;
+  display: flex;
+  justify-content: end;
+  flex-flow: column;
+}
+.btn_bottom .btn_bot_arrow {
+  display: flex;
+  justify-content: left;
+  width: 70%;
+  margin-bottom: 60px;
+}
+.btn_bottom .left_arrow {
+  cursor: pointer;
+  width: 65px;
+  margin-right: 80px;
+}
+.btn_bottom .right_arrow {
+  cursor: pointer;
+  width: 65px;
+}
+.left_arrow .left_circle,
+.right_arrow .right_circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.left_arrow {
+  position: relative;
+}
+.left_arrow .left_path {
+  width: 7px;
+  height: 1px;
+}
+.left_arrow .left_path::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 21px;
+  left: 20px;
+  width: 7px;
+  height: 1px;
+  transform: rotate(45deg);
+  background: black;
+}
+.left_arrow .left_path::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  width: 7px;
+  height: 1px;
+  transform: rotate(-45deg);
+  background: black;
+}
+.left_arrow .left_line {
+  position: absolute;
+  top: 19px;
+  left: 20px;
+  width: 50px;
+  height: 1px;
+  background: black;
+}
+.right_arrow {
+  position: relative;
+}
+.right_arrow .right_path {
+  width: 7px;
+  height: 1px;
+}
+.right_arrow .right_path::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 17px;
+  left: 10px;
+  width: 7px;
+  height: 1px;
+  transform: rotate(45deg);
+  background: black;
+}
+.right_arrow .right_path::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 21px;
+  left: 10px;
+  width: 7px;
+  height: 1px;
+  transform: rotate(-45deg);
+  background: black;
+}
+.right_arrow .right_line {
+  position: absolute;
+  top: 19px;
+  left: -35px;
+  width: 50px;
+  height: 1px;
+  background: black;
+}
+.btn_bot_txt {
+  width: 90%;
+}
+.btn_bot_txt .txt_bottom h1 {
+  font-size: 17px;
+  font-family: "MaruBuri", sans-serif;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+.btn_bot_txt .txt_bottom p {
+  font-size: 14px;
+  font-family: "MaruBuri", sans-serif;
+  font-weight: 500;
+  line-height: 22px;
 }
