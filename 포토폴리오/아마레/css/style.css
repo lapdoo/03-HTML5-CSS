@@ -157,6 +157,7 @@ label.container:hover .bar2 {
 
 .main_banner .slide {
   width: 170vw;
+  max-width: 170vw;
   height: 953px;
   border-radius: 0 0 50% 50%;
   overflow: hidden;
@@ -439,6 +440,18 @@ section {
   width: 653px;
   height: 735px;
 }
+.swiper3 {
+  width: 100%;
+  height: 100%;
+}
+.swiper3 .swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+.swiper3 .swiper-slide img {
+  display: block;
+  width: 100%;
+}
 .BottomImg img {
   width: 100%;
   height: 100%;
@@ -496,111 +509,9 @@ section {
   height: 1px;
   background: #dbc8bb;
 }
-.btn_bottom {
-  width: 22%;
-  padding-left: 80px;
-  display: flex;
-  justify-content: end;
-  flex-flow: column;
-}
-.btn_bottom .btn_bot_arrow {
-  display: flex;
-  justify-content: left;
-  width: 70%;
-  margin-bottom: 60px;
-}
-.btn_bottom .left_arrow {
-  cursor: pointer;
-  width: 65px;
-  margin-right: 80px;
-}
-.btn_bottom .right_arrow {
-  cursor: pointer;
-  width: 65px;
-}
-.left_arrow .left_circle,
-.right_arrow .right_circle {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  border: 1px solid black;
-}
-.left_arrow {
-  position: relative;
-}
-.left_arrow .left_path {
-  width: 7px;
-  height: 1px;
-}
-.left_arrow .left_path::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 21px;
-  left: 20px;
-  width: 7px;
-  height: 1px;
-  transform: rotate(45deg);
-  background: black;
-}
-.left_arrow .left_path::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 17px;
-  left: 20px;
-  width: 7px;
-  height: 1px;
-  transform: rotate(-45deg);
-  background: black;
-}
-.left_arrow .left_line {
-  position: absolute;
-  top: 19px;
-  left: 20px;
-  width: 50px;
-  height: 1px;
-  background: black;
-}
-.right_arrow {
-  position: relative;
-}
-.right_arrow .right_path {
-  width: 7px;
-  height: 1px;
-}
-.right_arrow .right_path::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 17px;
-  left: 10px;
-  width: 7px;
-  height: 1px;
-  transform: rotate(45deg);
-  background: black;
-}
-.right_arrow .right_path::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 21px;
-  left: 10px;
-  width: 7px;
-  height: 1px;
-  transform: rotate(-45deg);
-  background: black;
-}
-.right_arrow .right_line {
-  position: absolute;
-  top: 19px;
-  left: -35px;
-  width: 50px;
-  height: 1px;
-  background: black;
-}
 .btn_bot_txt {
-  width: 90%;
+  width: 23%;
+  padding-left: 70px;
 }
 .btn_bot_txt .txt_bottom h1 {
   font-size: 17px;
