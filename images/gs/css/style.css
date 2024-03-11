@@ -127,8 +127,8 @@ body {
 .ecoImages a:hover span {
   display: block;
 }
-@media screen and (max-width: 1280px) {
-  .area {
+@media screen and (max-width: 1450px) {
+  .main {
     max-width: 100%;
     margin: 0 auto;
   }

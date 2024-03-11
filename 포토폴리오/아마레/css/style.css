@@ -85,6 +85,7 @@ label.container:hover .bar2 {
 }
 .main {
   width: 100%;
+  max-width: 1920;
   position: relative;
   overflow: hidden;
 }
@@ -270,6 +271,7 @@ label.container:hover .bar2 {
 .main_hover:hover .arrow {
   transform: translateX(10px);
 }
+
 section {
   padding-top: 275px;
   width: 1450px;
@@ -353,6 +355,7 @@ section {
 }
 .con2 {
   width: 100%;
+  max-width: 1920px;
   height: 800px;
   padding: none;
   background: url(../images/main_visual_bg.jpg) center no-repeat;
@@ -360,6 +363,7 @@ section {
   justify-content: center;
   align-items: center;
 }
+
 .mov {
   position: relative;
   max-width: 435px;
@@ -524,4 +528,22 @@ section {
   font-family: "MaruBuri", sans-serif;
   font-weight: 500;
   line-height: 22px;
+}
+@media screen and (max-width: 1280px) {
+  .main {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .con2 {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .con2 {
+    height: 300px;
+  }
+  .mov {
+    isolation: isolate;
+  }
 }
