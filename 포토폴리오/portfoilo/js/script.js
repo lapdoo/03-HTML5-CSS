@@ -3,11 +3,11 @@ $(document).ready(function () {
   $("#fullpage").fullpage({
     sectionsColor: [
       "#1a9c56",
-      "#F3EEE8",
-      "#F3EEE8",
-      "#FFFCF5",
+      "#fffcf5",
+      "#fffcf5",
+      "#fffcf5",
       "#1a9c56",
-      "#ccc",
+      "#DB7220",
     ],
     anchors: ["sec1", "sec2", "sec3", "sec4", "sec5", "sec6"],
     menu: "#menu",
@@ -76,6 +76,17 @@ $(document).ready(function () {
       },
     },
   });
+  let tl = gsap.timeline();
+
+  tl.to(".fi", { y: 600, duration: 2 }, 1);
+  tl.to(".ps", { y: 600, duration: 1 }, "<");
+  tl.to(".ai", { y: 600, duration: 1 }, "+=1");
+  tl.to(".ht", { y: 600, duration: 1 }, "+=1");
+  tl.to(".cs", { y: 600, duration: 1 }, "+=1");
+  tl.to(".js", { y: 600, duration: 1 }, "+=1");
+  tl.to(".jq", { y: 600, duration: 1 }, "+=1");
+  tl.to(".ae", { y: 600, duration: 1 }, "+=1");
+
   var swiper2 = new Swiper(".mySwiper2", {
     direction: "vertical",
     slidesPerView: 1,

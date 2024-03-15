@@ -1,4 +1,12 @@
 @charset "uft-8";
+@font-face {
+  font-family: "Pally-Regular";
+  src: url("../../../webfonts/Pally-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Chillax-Medium";
+  src: url("../../../webfonts/Chillax-Medium.ttf") format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
@@ -30,6 +38,7 @@
 }
 #menu li.active a,
 #menu li a:hover {
+  -webkit-text-stroke: 2px black;
   color: #fff;
 }
 #menu li a {
@@ -51,10 +60,12 @@
 }
 .sec1 {
   font-family: "Prompt";
+  display: flex;
 }
 .sec1 .desc {
-  width: 1350px;
-  margin: 0 200px;
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
 }
 .ani_text1 {
   font-size: 30px;
@@ -130,12 +141,14 @@
   margin: 0 auto;
 } */
 .page2_box {
-  width: 1650px;
+  width: 100%;
+  max-width: 1350px;
+  height: 460px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background: #ccc;
+  background: #ffffff;
 }
 .page2_box > div {
   position: relative;
@@ -149,16 +162,21 @@
   font-family: "Prompt";
   font-size: 3.125vw;
 }
-.sec2 .desc .pro_txt {
-  /* margin-top: 1.875vw; */
+.sec2 .desc .pro_txt:first-of-type {
+  margin-left: 100px;
+}
+.sec2 .desc .pro_txt:nth-of-type(2) {
+  margin-top: 20px;
+  margin-left: 100px;
 }
 .sec2 .desc .pro_txt h3 {
-  font-family: "Prompt";
+  font-family: "Chillax-Medium", sans-serif;
   font-size: 2.225vw;
   padding-bottom: 1.25vw;
 }
 .sec2 .desc .pro_txt p {
-  font-size: 1.5vw;
+  font-family: "pretendard", sans-serif;
+  font-size: 1.1vw;
 }
 .ani_circle {
   position: relative;
@@ -174,7 +192,8 @@
   width: 100%;
   height: 100%;
   font-size: 30px;
-  font-family: "pretendard", sans-serif;
+  letter-spacing: 7px;
+  font-family: "Pally-Regular", sans-serif;
   animation: rotate_txt 30s infinite linear;
   z-index: 10;
 }
@@ -211,6 +230,17 @@
   font-family: "Prompt";
   font-size: 3.125vw;
 }
+.sec3 .con_box .timeline {
+  display: flex;
+}
+.sec3 .con_box .timeline .img_gsap {
+  width: 100px;
+  height: 100px;
+}
+.sec3 .con_box .timeline .img_gsap img {
+  width: 100%;
+  height: 100%;
+}
 .sec3 .con_box .gif {
   position: absolute;
   bottom: 3.125rem;
@@ -224,7 +254,7 @@
 .sec4 .desc {
   position: absolute;
   top: 15%;
-  left: 15%;
+  left: 8%;
 }
 .sec4 .desc h1 {
   font-family: "Prompt";
@@ -270,14 +300,15 @@
 }
 .sec5 .inner {
   position: relative;
-  width: 1000px;
-  height: 500px;
+  width: 100%;
+  height: 700px;
   margin: 0 auto;
+  background: #fffcf5;
 }
 .sec5 .desc {
   position: absolute;
-  top: 10%;
-  left: 10%;
+  top: 6%;
+  left: 8%;
   width: 100%;
   z-index: 10;
 }
@@ -292,7 +323,6 @@
 .mySwiper2 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -314,6 +344,82 @@
   left: var(--swiper-pagination-left, auto);
   top: 50%;
   transform: translate3d(0px, -50%, 0);
+}
+.img_box {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  margin: 50px;
+}
+.img_box img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+.img_box .blur_box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  clip-path: inset(0);
+  transition: clip-path 0.5s;
+}
+.img_box > img {
+  filter: blur(5px);
+}
+.img_box::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.534);
+}
+.img_box:hover .blur_box {
+  clip-path: inset(5.5% 2.5% round 500px 500px 0 0);
+}
+
+.section:last-of-type {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+}
+.section:last-of-type h1 {
+  position: absolute;
+  top: 170px;
+  left: 150px;
+  width: 1450px;
+  margin: 0 auto;
+  font-family: "Prompt";
+  font-size: 3.125vw;
+}
+
+.bottom_txt1 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1350px;
+  margin: a auto;
+  font-size: 1.725rem;
+}
+
+.bottom_txt2 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1350px;
+  margin: a auto;
+  font-size: 1rem;
 }
 .main {
   height: 1000px;

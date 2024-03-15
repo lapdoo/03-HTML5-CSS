@@ -7,8 +7,7 @@ function menu_in() {
     value.classList.add("on");
   });
   document.querySelector(".logo img").src = "images/logo01_1_on.png";
-  document.querySelector(".search img").src = "images/search_icon.svg";
-  document.querySelector(".country img").src = "images/country_icon.svg";
+
   sub.forEach(function (value, index) {
     value.classList.add("on");
   });
@@ -20,8 +19,7 @@ function menu_out() {
     value.classList.remove("on");
   });
   document.querySelector(".logo img").src = "images/logo01_1.png";
-  document.querySelector(".search img").src = "images/search_white_icon.svg";
-  document.querySelector(".country img").src = "images/country_white_icon.svg";
+
   sub.forEach(function (value, index) {
     value.classList.remove("on");
   });

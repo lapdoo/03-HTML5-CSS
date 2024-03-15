@@ -2,8 +2,9 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfoilo</title>
+    <title>Document</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Prompt:wght@900&display=swap"
       rel="stylesheet"
@@ -19,7 +20,7 @@
       crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/port.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/jquery.fullpage.js"></script>
   </head>
@@ -38,22 +39,130 @@
         <li data-menuanchor="sec6"><a href="#sec6">CONTACT</a></li>
       </ul>
     </div>
-    <div class="section sec1 active">
-      <div class="desc">
-        <div class="ani_text1">
-          <p>I'M READY TO BECOME</p>
-        </div>
-        <div class="ani_text2">
-          <h3>WEB DESIGNER</h3>
-        </div>
-        <div class="ani_text3">
-          <h3>& PUBLISHER</h3>
-        </div>
-        <div class="ani_text4">
-          <p>MIN JEONG'S PORTFOLIO</p>
+    <div id="fullpage">
+      <div class="section sec1 active">
+        <div class="desc">
+          <div class="ani_text1">
+            <p>I'M READY TO BECOME</p>
+          </div>
+          <div class="ani_text2">
+            <h3>WEB DESIGNER</h3>
+          </div>
+          <div class="ani_text3">
+            <h3>& PUBLISHER</h3>
+          </div>
+          <div class="ani_text4">
+            <p>MIN JEONG'S PORTFOLIO</p>
+          </div>
         </div>
         <div class="arrow_scroll"></div>
       </div>
+      <div class="section sec2">
+        <div class="page2_box">
+          <div class="desc">
+            <h1>ABOUT ME</h1>
+            <div class="pro_txt">
+              <h3>PROFILE</h3>
+              <p><strong>이름 : </strong>김민정</p>
+              <p><strong>생년월일 : </strong>1994. 06 .19</p>
+              <p><strong>연락처 : </strong>010-6582-7924</p>
+              <p><strong>E-MAIL : </strong>wlxodua@naver.com</p>
+            </div>
+            <div class="pro_txt">
+              <h3>EDUCATION</h3>
+              <p>
+                [혼합+디지털디자인] UI/UX 반응형 <br />웹디자인&웹퍼블리셔(코딩)
+                개발자C 수료
+              </p>
+            </div>
+          </div>
+          <div class="pro_img">
+            <div class="ani_circle">
+              <div class="txt_circle">
+                <svg viewBox="0 0 500 500">
+                  <path
+                    d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250"
+                    id="textcircle"
+                    fill="none"
+                  ></path>
+                  <text dy="50">
+                    <textPath
+                      xlink:href="#textcircle"
+                      style="fill: rgb(0, 0, 0)"
+                    >
+                      LOOK AT ME! LOOK AT ME! LOOK AT ME! LOOK AT ME! LOOK AT
+                      ME! LOOK AT ME!LOOK AT ME!
+                    </textPath>
+                  </text>
+                </svg>
+              </div>
+              <img src="images/IMG_4725.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section sec3">
+        <div class="con_box">
+          <h1>MY SKILL</h1>
+          <div class="ani_light"></div>
+          <div class="gif">
+            <img src="images/고양이-원스.gif" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="section sec4">
+        <div class="desc">
+          <h1>DESIGN</h1>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h1>로고 디자인</h1>
+            </div>
+            <div class="swiper-slide">
+              <h3>가로배너</h3>
+              <div class="slide_box1">
+                <img src="images/Group 24.png" alt="" />
+                <img src="images/Group 24.png" alt="" />
+                <img src="images/Group 24.png" alt="" />
+                <img src="images/Group 24.png" alt="" />
+                <img src="images/Group 24.png" alt="" />
+                <img src="images/Group 24.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <h3>세로배너</h3>
+              <div class="slide_box2">
+                <img src="images/Web Designs.png" alt="" />
+                <img src="images/Web Designs.png" alt="" />
+                <img src="images/Web Designs.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="section sec5">
+        <div class="inner">
+          <div class="desc">
+            <h1>CODING</h1>
+          </div>
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="main"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/portscript.js"></script>
   </body>
 </html>
