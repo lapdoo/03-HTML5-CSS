@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/jquery.fullpage.min.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.fullpage.min.js"></script>
+  </head>
+  <body>
+    <ul id="menu">
+      <li data-menuanchor="firstPage"><a href="#firstPage">Main</a></li>
+      <li data-menuanchor="secondPage">
+        <a href="#secondPage">Product</a>
+      </li>
+      <li data-menuanchor="3rdPage"><a href="#3rdPage">About us</a></li>
+      <li data-menuanchor="4thpage">
+        <a href="#4thpage">IR & <br />Career</a>
+      </li>
+      <li data-menuanchor="5thpage">
+        <a href="#5thpage">PR<br />Center</a>
+      </li>
+      <li data-menuanchor="6thpage">
+        <a href="#6thpage">Life in<br />Huvis</a>
+      </li>
+      <li data-menuanchor="7thpage" class="menuEnd">
+        <a href="#7thpage">7</a>
+      </li>
+    </ul>
+    <div id="fullpage">
+      <div class="section" id="section0">
+        <section class="visual">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/mainVisual01_3.jpg" />
+                <div class="txtBox">
+                  <div class="inner cnt">
+                    <dl>
+                      <dt>
+                        <em>소재의</em> <br /><span>무한한</span> <br />가능성
+                      </dt>
+                      <dd>The Infinite potential of <span>Materials</span></dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/mainVisual02.jpg" />
+                <div class="txtBox">
+                  <div class="inner cnt">
+                    <dl>
+                      <dt>
+                        <em><em>더 나은</em></em> <br />
+                        <span>안전</span><em>을 위한</em> <br />
+                        기술
+                      </dt>
+                      <dd>Technology for better <span>Safety</span></dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/mainVisual03_3.jpg" />
+                <div class="txtBox">
+                  <div class="inner cnt">
+                    <dl>
+                      <dt>
+                        <em>더 나은</em> <br />
+                        <span>건강</span><em>을 위한</em> <br />
+                        기술
+                      </dt>
+                      <dd>Technology for better <span>Health</span></dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/mainVisual04.jpg" />
+                <div class="txtBox">
+                  <div class="inner cnt">
+                    <dl>
+                      <dt>
+                        <em>더 나은</em> <br />
+                        <span>환경</span><em>을 위한</em> <br />
+                        기술
+                      </dt>
+                      <dd>Technology for better <span>Environment</span></dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+      </div>
+      <div class="section" id="section1"></div>
+      <div class="section" id="section2"></div>
+      <div class="section" id="section3"></div>
+      <div class="section" id="section4"></div>
+      <div class="section" id="section5"></div>
+      <div class="section fp-auto-height" id="section6">
+        <h1>마지막페이지입니다</h1>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
