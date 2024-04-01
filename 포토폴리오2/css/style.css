@@ -11,6 +11,16 @@
   font-family: "CabinetGrotesk-Medium";
   src: url("../../../webfonts/CabinetGrotesk-Medium.ttf") format("truetype");
 }
+@font-face {
+  font-family: "bulbis-fill";
+  src: url("../../webfonts/Bulbis-Filled.woff") format("woff"),
+    url("../../webfonts/Bulbis-Filled.woff2") format("woff2");
+}
+@font-face {
+  font-family: "poor story";
+  src: url("../../webfonts/poor") format("woff"),
+    url("../../webfonts/Bulbis-Filled.woff2") format("woff2");
+}
 * {
   margin: 0;
   padding: 0;
@@ -20,12 +30,17 @@
   height: 100%;
 }
 .head {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   height: 150px;
   z-index: 70;
   width: 100%;
+  opacity: 1;
+  transition: 1s;
+}
+.head.active {
+  opacity: 0;
 }
 #menu {
   width: 1250px;
@@ -76,6 +91,11 @@
   letter-spacing: 3px;
   text-align: left;
 }
+.ani_text1 p {
+  font-family: "Poor Story", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 .ani_text2 {
   margin-top: 10px;
   display: inline-block;
@@ -88,8 +108,8 @@
   font-size: 150px;
   line-height: 1;
   letter-spacing: 5px;
-  -webkit-text-stroke: 4px #000000;
-  -webkit-text-fill-color: white;
+  font-family: "bulbis-fill";
+  color: #fff;
   animation: up 1s forwards;
   display: block;
   opacity: 0;
@@ -104,8 +124,8 @@
   font-size: 150px;
   line-height: 1;
   letter-spacing: 5px;
-  -webkit-text-stroke: 4px #000000;
-  -webkit-text-fill-color: white;
+  font-family: "bulbis-fill";
+  color: #fff;
   animation: up 1s forwards;
   display: block;
   opacity: 0;
@@ -115,9 +135,15 @@
   position: absolute;
   bottom: 50px;
   left: 50%;
+  animation: up 1s forwards;
+  opacity: 0;
+  animation-delay: 0.5s;
   transform: translate(-50%, -50%);
 }
 .ani_text4 p {
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 20px;
   letter-spacing: 3px;
 }

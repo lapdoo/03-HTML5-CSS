@@ -1,3 +1,11 @@
+$(window).on("scroll", function () {
+  if ($(window).scrollTop()) {
+    $(".head").addClass("active");
+  } else {
+    $(".head").removeClass("active");
+  }
+});
+
 $(document).ready(function () {
   // fullpage
   $("#fullpage").fullpage({

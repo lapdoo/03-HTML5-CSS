@@ -1,16 +1,26 @@
 @charset "uft-8";
 @font-face {
   font-family: "Pally-Regular";
-  src: url("../../../webfonts/Pally-Regular.ttf") format("truetype");
+  src: url("../../webfonts/Pally-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Chillax-Medium";
-  src: url("../../../webfonts/Chillax-Medium.ttf") format("truetype");
+  src: url("../../webfonts/Chillax-Medium.ttf") format("truetype");
 }
 @font-face {
   font-family: "CabinetGrotesk-Medium";
-  src: url("../../../webfonts/CabinetGrotesk-Medium.ttf") format("truetype");
+  src: url("../../webfonts/CabinetGrotesk-Medium.ttf") format("truetype");
 }
+@font-face {
+  font-family: "bulbis-fill";
+  src: url("../../webfonts/Bulbis-Filled.woff") format("woff"),
+    url("../../webfonts/Bulbis-Filled.woff2") format("woff2");
+}
+@font-face {
+  font-family: "bulbis-outline";
+  src: url("../../webfonts/Bulbis\ DEMO.ttf") format("truetype");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,33 +36,41 @@
   height: 150px;
   z-index: 70;
   width: 100%;
+  opacity: 1;
+  transition: 0.5s;
+}
+.head.active {
+  opacity: 0;
+}
+.nav-up {
+  top: -150px;
 }
 #menu {
   width: 1250px;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 70px;
   display: flex;
   justify-content: space-evenly;
 }
 #menu li {
-  width: 100px;
-  height: 100px;
+  padding: 10px 20px;
   justify-content: space-evenly;
-  font-size: 20px;
-  font-family: "Chillax-Medium";
-  font-weight: bold;
+  font-size: 25px;
+  font-family: "bulbis-fill";
+  font-weight: lighter;
   display: inline-block;
 }
-#menu li:nth-of-type(2) {
-  font-size: 18px;
-}
-#menu li.active a,
+
+/* #menu li.active a {
+  font-family: "bulbis-outline";
+} */
+/* #menu li.active a,
 #menu li a:hover {
   -webkit-text-fill-color: rgb(0, 0, 0);
-}
+} */
 #menu li a {
   text-decoration: none;
-  color: #ffffff;
+  color: #eeff00;
 }
 
 .section {
@@ -69,11 +87,13 @@
   margin: 0 auto;
 }
 .ani_text1 {
-  font-family: "Poor Story";
   color: white;
   font-size: 30px;
   letter-spacing: 3px;
   text-align: left;
+}
+.ani_text1 p {
+  font-family: "Poor Story";
 }
 .ani_text2 {
   margin-top: 10px;
@@ -88,6 +108,8 @@
   line-height: 1;
   letter-spacing: 5px;
   color: white;
+  font-family: "bulbis-fill";
+  font-weight: lighter;
   animation: up 1s forwards;
   display: block;
   opacity: 0;
@@ -103,22 +125,38 @@
   line-height: 1;
   letter-spacing: 5px;
   color: white;
+  font-family: "bulbis-fill";
+  font-weight: lighter;
   animation: up 1s forwards;
   display: block;
   opacity: 0;
   animation-delay: 0.5s;
 }
 .ani_text4 {
-  font-family: "pretendard" sans-serif;
   color: white;
   position: absolute;
-  bottom: 100px;
+  bottom: 130px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .ani_text4 p {
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 20px;
   letter-spacing: 3px;
+}
+.ani_icon {
+  width: 50px;
+  height: 50px;
+  background: url(../images/free-icon-scroll-bar-5421659.png) no-repeat center /
+    cover;
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(55deg)
+    brightness(111%) contrast(113%);
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 @keyframes up {
   0% {
