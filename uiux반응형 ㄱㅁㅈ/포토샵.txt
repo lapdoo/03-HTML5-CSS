@@ -1,0 +1,14 @@
+전경색채우기: alt+Delete
+배경색채우기:ctrl+Delete
+선택해제:ctrl+D
+선택반전:ctrl+shift+i
+레이어복제:ctrl+J(alt+드래그)
+레이어잘라서복제:ctrl+shift+J
+레이어썸네일을 ctrl+클릭-->
+해당 개체가 선택영역으로 선택
+작업공간의 해당개체를 ctrl+클릭-->
+해당 레이어가 선택
+변형: ctrl+T(크기조절,회전...)
+ctrl==>기울리기(skew,distort)
+ctrl+alt+shift==>perspective
+ctrl+alt+shfit+E :각각의 레이어는 그대로 두고 병합
